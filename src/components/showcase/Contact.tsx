@@ -57,7 +57,7 @@ const Contact: React.FC<ContactProps> = (props) => {
         try {
             setIsLoading(true);
             const res = await fetch(
-                'https://api.henryheffernan.com/api/contact',
+                'https://api.mattkanter.com/api/contact',
                 {
                     method: 'POST',
                     headers: {
@@ -138,8 +138,8 @@ const Contact: React.FC<ContactProps> = (props) => {
                 <br />
                 <p>
                     <b>Email: </b>
-                    <a href="mailto:mattkanter1@outlook.com">
-                        mattkanter1@outlook.com
+                    <a href="mailto:matthew@mattkanter.com">
+                        matthew@mattkanter.com
                     </a>
                 </p>
 

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import software from '../../assets/pictures/projects/software.gif';
-import art from '../../assets/pictures/projects/art.gif';
-import music from '../../assets/pictures/projects/music.gif';
+import communication from '../../assets/pictures/projects/communication.gif';
+import cybersecurity from '../../assets/pictures/projects/cybersecurity.gif';
 
 export interface ProjectsProps {}
 
@@ -71,10 +71,9 @@ const Projects: React.FC<ProjectsProps> = (props) => {
             <h3>& Hobbies</h3>
             <br />
             <p>
-                Click on one of the areas below to check out some of my favorite
-                projects I've done in that field. I spent a lot of time to
-                include a lot of visuals and interactive media to showcase each
-                project. Enjoy!
+                Click on one of the areas below to check out some of the work I've done over the years
+                in each category. This is of course just a cohort of my time and effort, but feel free to
+                get in touch if you want to learn more. Enjoy!
             </p>
             <br />
             <div style={styles.projectLinksContainer}>
@@ -86,18 +85,18 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                     route="software"
                 />
                 <ProjectBox
-                    icon={music}
-                    iconStyle={styles.musicIcon}
-                    title="Music"
-                    subtitle="VENTURES"
-                    route="music"
+                    icon={cybersecurity}
+                    iconStyle={styles.cyberIcon}
+                    title="Cybersecurity"
+                    subtitle="ENDEAVORS"
+                    route="cybersecurity"
                 />
                 <ProjectBox
-                    icon={art}
-                    iconStyle={styles.artIcon}
-                    title="Art"
-                    subtitle="ENDEAVORS"
-                    route="art"
+                    icon={communication}
+                    iconStyle={styles.commIcon}
+                    title="Communication"
+                    subtitle="VENTURES"
+                    route="communication"
                 />
             </div>
         </div>
@@ -134,20 +133,20 @@ const styles: StyleSheetCSS = {
         alignItems: 'center',
     },
     computerIcon: {
-        width: 56,
-        height: 56,
+        width: 64,
+        height: 64,
     },
-    musicIcon: {
-        width: 48,
-        height: 48,
+    cyberIcon: {
+        width: 64,
+        height: 64,
     },
     arrowIcon: {
         width: 48,
         height: 48,
     },
-    artIcon: {
-        width: 21 * 2,
-        height: 37 * 2,
+    commIcon: {
+        width: 64,
+        height: 64,
     },
 };
 

@@ -1,5 +1,7 @@
 import React from 'react';
-import me from '../../assets/pictures/workingAtComputer.jpg';
+import closeUp from '../../assets/pictures/cinematicCloseUp.jpg';
+import relationship from '../../assets/pictures/girlfriendAndI.jpg';
+import volleyball from '../../assets/pictures/alumniTournament.jpg';
 import meNow from '../../assets/pictures/currentme.jpg';
 import { Link } from 'react-router-dom';
 import ResumeDownload from './ResumeDownload';
@@ -16,19 +18,20 @@ const About: React.FC<AboutProps> = (props) => {
             <br />
             <div className="text-block">
                 <p>
-                    I'm a software engineer currently working at Vercel! In May
-                    of 2022 I graduated from Rensselaer Polytechnic Institute
-                    with my BS in Computer Science.
+                    I'm a software engineer currently working at the Naval Surface Warfare Center Dahlgren Division (NSWCDD)! 
+                    In May of 2024 I graduated from the University of Mary Washington (UMW)
+                    with my B.S. in Computer Science. 
+                    I am currently a student at Georgia Tech to earn my M.S. in Computer Science, starting in August of 2024.
                 </p>
                 <br />
                 <p>
                     Thank you for taking the time to check out my portfolio. I
                     really hope you enjoy exploring it as much as I enjoyed
-                    building it. If you have any questions or comments, feel
+                    creating it. If you have any questions or comments, feel
                     free to contact me using{' '}
                     <Link to="/contact">this form</Link> or shoot me an email at{' '}
-                    <a href="mailto:henryheffernan@gmail.com">
-                        henryheffernan@gmail.com
+                    <a href="mailto:matthew@mattkanter.com">
+                        matthew@mattkanter.com
                     </a>
                 </p>
             </div>
@@ -37,53 +40,30 @@ const About: React.FC<AboutProps> = (props) => {
                 <h3>About Me</h3>
                 <br />
                 <p>
-                    From a young age, I have had a curiosity about how things
-                    worked. This naturally led me to become absolutely obsessed
-                    with Lego and I fell in love with building things. In
-                    elementary school, I joined the Lego Robotics team at my
-                    local middle school, which was my first real exposure to
-                    programming. In 2008, my family and I moved across the
-                    country from California to New York, where I attended middle
-                    school, high school, and college.
+                    I grew up in Virginia Beach, VA with a loving family.
+                    I think I played almost every sport imaginable as a young child, but most fell on deaf ears 
+                    in exchange for playing playing Wii Sports, Super Smash Brothers Brawl, Super Mario Galaxy (1 or 2),
+                    or any of the multitude of Kirby games. It is with this infatuation with video games that I started to 
+                    develop a healthy love and curiousity for computer systems. 
+                    I was quite the disobedient software user, trying to homebrew my Nintendo DS and 3DS, jailbreak my iPhone,
+                    and learn about anything I could to break limits and test boundaries on the systems I was using.
                 </p>
                 <br />
                 <div className="captioned-image">
-                    <img src={me} style={styles.image} alt="" />
+                    <img src={closeUp} style={styles.image} alt="" />
                     <p>
                         <sub>
-                            <b>Figure 1:</b> A real photo of me developing this
-                            website :)
+                            <b>Figure 1:</b> A very cinematic photo taken of me from my good friend Andre on a hike in South Africa! 
                         </sub>
                     </p>
                 </div>
-
-                <p>
-                    I started programming more seriously in high school,
-                    initially learning how to scrape and interact with websites.
-                    I went on to do a ton of passion projects, many of them with
-                    one of my closest friends,{' '}
-                    <a
-                        rel="noreferrer"
-                        target="_blank"
-                        href="https://www.linkedin.com/in/scott-bass-189a7919b/"
-                    >
-                        Scott Bass
-                    </a>
-                    . We worked on many projects together, including chat bots,
-                    multiple game projects, apps, and more. One of these
-                    projects is viewable on my{' '}
-                    <Link to="/projects/software">Software Projects</Link> page.
-                </p>
                 <br />
                 <p>
-                    In 2017, I got accepted into Rennselear Polytechnic
-                    Institute to study Computer Science. It was my first choice
-                    and I was absolutely ecstatic to be going to such a great
-                    university. At the end of my sophomore year, I got an
-                    internship working for the startup Hover, primarily focusing
-                    on frontend work. I continued to work at Hover on and off
-                    for about a year and a half, until the start of my senior
-                    year when I decided to focus on other opportunities.
+                    This love never seemed to go away through my grade school years, and once Advanced Placement (AP) Computer Science
+                    was offered as a class during my senior year at Frank W. Cox High School, I couldn't pass up the opportunity to expand
+                    my knowledge to programming. This also occured during the rise of social media usage among all teenagers and young adults
+                    and the implications that new digital rhetoric and media might impact our society, and I continued to find learning about
+                    and studying communication across computer systems fascinating.
                 </p>
                 <br />
                 <br />
@@ -96,63 +76,124 @@ const About: React.FC<AboutProps> = (props) => {
                             flexDirection: 'column',
                         }}
                     >
+                        <p>
+                            In all of the facets of my life, I have strived to be the best I can be to the best of my ability. 
+                            This has led me to value my aptitude for learning throughout my life as one of the most important 
+                            parts of my reality. This valuation of scholarship led my love for learning and my love of computers
+                            in the direction of Computer Science.
+                        </p>
+                        <br />
+                        <p>
+                            In the Fall of 2020 during the Great COVID-19 War (satirically), I matriculated into UMW as an undergraduate
+                            seeking my bachelors degree in my double major of Computer Science & Communication and Digital Studies with
+                            a minor in Cybersecurity. At the end of my sophomore year I secured an internship with {' '}
+                            <a  rel="noreferrer" target="_blank" href="https://keycaliber.com">KeyCaliber</a>, a D.C. based software company 
+                            aimed at quantifying risk management and company asset vulnerabilities. 
+                            I would return to them to work part time during my last semester at UMW in Spring '24, but before that I maintained
+                            an on-campus applications development internship and a couple other internship experiences. You can check them out on
+                            my {' '}
+                            <Link to='/experience'>Experience</Link> page.
+                        </p>
+                        <br />
+                        <p>
+                            During my time at UMW, I met the love of my life, {' '}
+                            <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/reese-kubricki-b43b71211/">Reese</a>. She is a
+                            fantastic person and has supported me in all avenues of my life even when I might not have even believed in myself. Somehow
+                            during a time when not a single person was practically allowed to leave their rooms and houses, and while college freshman
+                            were bunkered in our dorm rooms with no contact with others past a mask, we found each other and have been together ever since.
+                        </p>
+                        <br />
+                        <p>
+
+                        </p>
+                </div>
+                <div style={styles.verticalImage} className="captioned-image">
+                    <img src={meNow} style={styles.image} alt="" />
+                    <p>
+                        <sub>
+                            <b>Figure 2:</b> Me, November 2023
+                        </sub>
+                    </p>
+                </div>
+                </div>
+                <br />
+                <br />
+                <div style={{}}>
+                    <div
+                        style={{
+                            flex: 1,
+                            textAlign: 'justify',
+                            alignSelf: 'top',
+                            flexDirection: 'column',
+                        }}
+                    >
                         <h3>My Hobbies</h3>
                         <br />
                         <p>
                             Beyond software, I have a lot of hobbies that I
                             enjoy doing in my free time. The more tangible
                             hobbies I have are{' '}
-                            <Link to="/projects/music">Music Production</Link>{' '}
-                            and creating{' '}
-                            <Link to="/projects/art">Digital Art</Link>. You can
+                            <Link to="/projects/cybersecurity">Cybersecurity</Link>{' '}
+                            and studying{' '}
+                            <Link to="/projects/communication">Digital Communication</Link>. You can
                             read more about each of these on their respective
-                            pages under my projects tab. Some other hobbies I
-                            enjoy are working out, cooking, and (unsurprisingly)
-                            playing video games.
+                            pages under my{' '}
+                            <Link to="/projects">Projects</Link> tab. Some other hobbies I
+                            enjoy are working out, playing volleyball, coaching, and (unsurprisingly)
+                            playing video games (sometimes competitively).
                         </p>
                         <br />
                         <p>
-                            In college, I was an active member in the fraternity
-                            Sigma Alpha Epsilon and held multiple positions in
-                            the chapter. I met a lot of amazing people through
-                            my fraternity and thoroughly enjoyed the community.
+                            During my undergrad at UMW, I was a collegiate athlete for {' '}
+                            <a  rel="noreferrer" target="_blank" href="https://www.rocketleague.com/en">Rocket League (video game)</a> in which
+                            I participated in the competitive scene and intermittently coached new talent. This part of my life
+                            was an incredible time, as UMW Esports helped to shape and refine my abilities to work in a team toward
+                            something larger than myself.
+                        </p>
+                        <br />
+                        <p>
+                            Alongside UMW Esports, I was also an integral player on the{' '}
+                            <a  rel="noreferrer" target="_blank" href="https://www.instagram.com/umwmensvolleyball">UMW Men's Club Volleyball</a> team 
+                            both in a leadership role and as a vital part of our travel team in competing intercollegiately against other schools
+                            that were mostly within Virgina and the Greater D.C. area. Volleyball will forever be a passion of mine, partly
+                            because I am good at it, partly because Reese also loves it, but mostly because I love and enjoy the
+                            spirit of play with a team I have made a connection and community with.
+                        </p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <p>
+                            Any reason you might have for contacting me is acceptable (except for the obvious, like spam, death threats, etc.). I would love to hear from
+                            you! You can reach me through the{' '}
+                            <Link to="/contact">contact page</Link> or shoot me an email
+                            at{' '}
+                            <a href="mailto:matthew@mattkanter.com">
+                                matthew@mattkanter.com
+                            </a>
                         </p>
                     </div>
                     <div style={styles.verticalImage}>
-                        <img src={meNow} style={styles.image} alt="" />
+                        <img src={relationship} style={styles.image} alt="" />
                         <p>
                             <sub>
-                                <b>Figure 2:</b> Me, April 2022
+                                <b>Figure 3:</b> Mi amor Reese and I :)
                             </sub>
                         </p>
                     </div>
                 </div>
                 <br />
                 <br />
-                <p>
-                    Thanks for reading about me! I hope that you enjoy exploring
-                    the rest of my portfolio website and everything it has to
-                    offer. If you find the easter egg make sure to let me know
-                    on twitter{' '}
-                    <a
-                        rel="noreferrer"
-                        target="_blank"
-                        href="https://twitter.com/henryheffernan"
-                    >
-                        @henryheffernan
-                    </a>{' '}
-                    Good luck and have fun!
-                </p>
-                <br />
-                <p>
-                    If you have any questions or comments I would love to hear
-                    them. You can reach me through the{' '}
-                    <Link to="/contact">contact page</Link> or shoot me an email
-                    at{' '}
-                    <a href="mailto:henryheffernan@gmail.com">
-                        henryheffernan@gmail.com
-                    </a>
-                </p>
+                <div className="captioned-image">
+                    <img src={volleyball} style={styles.image} alt="" />
+                    <p>
+                        <sub>
+                            <b>Figure 4:</b> Me (light blue shirt, right) with our men's and women's 
+                            volleyball clubs at our annual alumni tournament.
+                        </sub>
+                    </p>
+                </div>
             </div>
         </div>
     );
