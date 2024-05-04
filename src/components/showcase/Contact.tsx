@@ -1,6 +1,6 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState } from 'react';
 import colors from '../../constants/colors';
-import twitterIcon from '../../assets/pictures/contact-twitter.png';
+import discordIcon from '../../assets/pictures/contact-discord.png';
 import ghIcon from '../../assets/pictures/contact-gh.png';
 import inIcon from '../../assets/pictures/contact-in.png';
 import ResumeDownload from './ResumeDownload';
@@ -116,15 +116,15 @@ const Contact: React.FC<ContactProps> = (props) => {
                 <div style={styles.socials}>
                     <SocialBox
                         icon={ghIcon}
-                        link={'https://github.com/henryjeff'}
+                        link={'https://github.com/mkantrr'}
                     />
                     <SocialBox
                         icon={inIcon}
-                        link={'https://www.linkedin.com/in/henryheffernan/'}
+                        link={'https://www.linkedin.com/in/mkanter124/'}
                     />
                     <SocialBox
-                        icon={twitterIcon}
-                        link={'https://twitter.com/henryheffernan'}
+                        icon={discordIcon}
+                        link={'https://discord.com/users/204980290609872896'}
                     />
                 </div>
             </div>
@@ -138,8 +138,8 @@ const Contact: React.FC<ContactProps> = (props) => {
                 <br />
                 <p>
                     <b>Email: </b>
-                    <a href="mailto:henryheffernan@gmail.com">
-                        henryheffernan@gmail.com
+                    <a href="mailto:mattkanter1@outlook.com">
+                        mattkanter1@outlook.com
                     </a>
                 </p>
 

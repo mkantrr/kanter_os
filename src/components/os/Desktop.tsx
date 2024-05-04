@@ -2,14 +2,16 @@ import React, { useCallback, useEffect, useState } from 'react';
 import Colors from '../../constants/colors';
 import ShowcaseExplorer from '../applications/ShowcaseExplorer';
 import Doom from '../applications/Doom';
-import OregonTrail from '../applications/OregonTrail';
+import PacEM from '../applications/PacEM';
+import SimCity from '../applications/SimCity2000';
+import Tetris from '../applications/Tetris';
 import ShutdownSequence from './ShutdownSequence';
-// import ThisComputer from '../applications/ThisComputer';
-import Henordle from '../applications/Henordle';
+import ThisComputer from '../applications/ThisComputer';
 import Toolbar from './Toolbar';
 import DesktopShortcut, { DesktopShortcutProps } from './DesktopShortcut';
 import Scrabble from '../applications/Scrabble';
 import { IconName } from '../../assets/icons';
+import backgroundImage from '../../assets/pictures/background-image.png';
 import Credits from '../applications/Credits';
 
 export interface DesktopProps {}
@@ -24,23 +26,23 @@ const APPLICATIONS: {
         component: React.FC<ExtendedWindowAppProps<any>>;
     };
 } = {
-    // computer: {
-    //     key: 'computer',
-    //     name: 'This Computer',
-    //     shortcutIcon: 'computerBig',
-    //     component: ThisComputer,
-    // },
+    computer: {
+         key: 'computer',
+         name: 'This Computer',
+         shortcutIcon: 'computerBig',
+         component: ThisComputer,
+     },
     showcase: {
         key: 'showcase',
         name: 'My Showcase',
         shortcutIcon: 'showcaseIcon',
         component: ShowcaseExplorer,
     },
-    trail: {
-        key: 'trail',
-        name: 'The Oregon Trail',
-        shortcutIcon: 'trailIcon',
-        component: OregonTrail,
+    pac_em: {
+        key: 'pac_em',
+        name: 'Pac Em',
+        shortcutIcon: 'pacEmIcon',
+        component: PacEM,
     },
     doom: {
         key: 'doom',
@@ -48,17 +50,23 @@ const APPLICATIONS: {
         shortcutIcon: 'doomIcon',
         component: Doom,
     },
+    tetris: {
+        key: 'tetris',
+        name: 'Tetris',
+        shortcutIcon: 'tetrisIcon',
+        component: Tetris,
+    },
+    simcity2000: {
+        key: 'simcity2000',
+        name: 'Simcity 2000',
+        shortcutIcon: 'simCityIcon',
+        component: SimCity,
+    },
     scrabble: {
         key: 'scrabble',
         name: 'Scrabble',
         shortcutIcon: 'scrabbleIcon',
         component: Scrabble,
-    },
-    henordle: {
-        key: 'henordle',
-        name: 'Henordle',
-        shortcutIcon: 'henordleIcon',
-        component: Henordle,
     },
     credits: {
         key: 'credits',
@@ -261,6 +269,8 @@ const styles: StyleSheetCSS = {
         minHeight: '100%',
         flex: 1,
         backgroundColor: Colors.turquoise,
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'contain',
     },
     shutdown: {
         minHeight: '100%',
