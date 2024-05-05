@@ -225,7 +225,7 @@ const Contact: React.FC<ContactProps> = (props) => {
                                     <sub>
                                         {formMessage
                                             ? `${formMessage}`
-                                            : ' All messages get forwarded straight to my personal email'}
+                                            : ' All messages get forwarded straight to my personal email.'}
                                     </sub>
                                 </b>
                             </p>
