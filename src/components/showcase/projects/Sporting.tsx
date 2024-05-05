@@ -109,7 +109,7 @@ const SportingProjects: React.FC<SportingProjectsProps> = (props) => {
                                     </a>, and{' '}
                                     <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/garrett-moore-a58384290/">
                                         Garrett Moore
-                                    </a>
+                                    </a>.
                             </sub>
                         </p>
                     </div>

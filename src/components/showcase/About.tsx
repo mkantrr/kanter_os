@@ -24,7 +24,7 @@ const About: React.FC<AboutProps> = (props) => {
                     I am currently a student at Georgia Tech to earn my M.S. in Computer Science, starting in August of 2024.
                 </p>
                 <br />
-                <p>
+                <p style={{textAlign: "left"}}>
                     Thank you for taking the time to check out my portfolio. I
                     really hope you enjoy exploring it as much as I enjoyed
                     creating it. If you have any questions or comments, feel
