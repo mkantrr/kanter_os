@@ -32,7 +32,7 @@ const About: React.FC<AboutProps> = (props) => {
                     <Link to="/contact">this form</Link> or shoot me an email at{' '}
                     <a href="mailto:matthew@mattkanter.com">
                         matthew@mattkanter.com
-                    </a>
+                    </a>.
                 </p>
             </div>
             <ResumeDownload />
@@ -173,7 +173,7 @@ const About: React.FC<AboutProps> = (props) => {
                             at{' '}
                             <a href="mailto:matthew@mattkanter.com">
                                 matthew@mattkanter.com
-                            </a>
+                            </a>.
                         </p>
                     </div>
                     <div style={styles.verticalImage}>
