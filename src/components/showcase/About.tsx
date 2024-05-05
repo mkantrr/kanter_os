@@ -134,8 +134,8 @@ const About: React.FC<AboutProps> = (props) => {
                         <p>
                             Beyond software, I have a lot of hobbies that I
                             enjoy doing in my free time. The more tangible
-                            hobbies I have are{' '}
-                            <Link to="/projects/cybersecurity">Cybersecurity</Link>{' '}
+                            hobbies I have are playing{' '}
+                            <Link to="/projects/sporting">Sports</Link>{' '}
                             and studying{' '}
                             <Link to="/projects/communication">Digital Communication</Link>. You can
                             read more about each of these on their respective
@@ -180,7 +180,7 @@ const About: React.FC<AboutProps> = (props) => {
                         <img src={relationship} style={styles.image} alt="" />
                         <p>
                             <sub>
-                                <b>Figure 3:</b> Mi amor Reese and I, 2022 :)
+                                <b>Figure 3:</b> Mi amor Reese and I, April 2024 :)
                             </sub>
                         </p>
                     </div>

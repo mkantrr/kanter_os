@@ -26,12 +26,6 @@ const APPLICATIONS: {
         component: React.FC<ExtendedWindowAppProps<any>>;
     };
 } = {
-    computer: {
-         key: 'computer',
-         name: 'This Computer',
-         shortcutIcon: 'computerBig',
-         component: ThisComputer,
-     },
     showcase: {
         key: 'showcase',
         name: 'My Showcase',
@@ -73,6 +67,12 @@ const APPLICATIONS: {
         name: 'Credits',
         shortcutIcon: 'credits',
         component: Credits,
+    },
+    computer: {
+        key: 'computer',
+        name: 'This Computer',
+        shortcutIcon: 'computerBig',
+        component: ThisComputer,
     },
 };
 

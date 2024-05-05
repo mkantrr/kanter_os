@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import software from '../../assets/pictures/projects/software.gif';
 import communication from '../../assets/pictures/projects/communication.gif';
-import cybersecurity from '../../assets/pictures/projects/cybersecurity.gif';
+import volleyball from '../../assets/pictures/projects/volleyball.gif';
 
 export interface ProjectsProps {}
 
@@ -85,18 +85,18 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                     route="software"
                 />
                 <ProjectBox
-                    icon={cybersecurity}
-                    iconStyle={styles.cyberIcon}
-                    title="Cybersecurity"
-                    subtitle="ENDEAVORS"
-                    route="cybersecurity"
-                />
-                <ProjectBox
                     icon={communication}
                     iconStyle={styles.commIcon}
                     title="Communication"
                     subtitle="VENTURES"
                     route="communication"
+                />
+                <ProjectBox
+                    icon={volleyball}
+                    iconStyle={styles.volleyballIcon}
+                    title="Sporting"
+                    subtitle="ENDEAVORS"
+                    route="sporting"
                 />
             </div>
         </div>
@@ -136,7 +136,7 @@ const styles: StyleSheetCSS = {
         width: 64,
         height: 64,
     },
-    cyberIcon: {
+    volleyballIcon: {
         width: 64,
         height: 64,
     },

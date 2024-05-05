@@ -60,13 +60,13 @@ const VerticalNavbar: React.FC<VerticalNavbarProps> = (props) => {
                             />
                             <Link
                                 containerStyle={styles.insetLink}
-                                to="projects/cybersecurity"
-                                text="CYBERSECURITY"
+                                to="projects/communication"
+                                text="COMMUNICATION"
                             />
                             <Link
                                 containerStyle={styles.insetLink}
-                                to="projects/communication"
-                                text="COMMUNICATION"
+                                to="projects/sporting"
+                                text="SPORTING"
                             />
                         </div>
                     )
@@ -120,7 +120,7 @@ const styles: StyleSheetCSS = {
     },
     insetLinks: {
         flexDirection: 'column',
-        marginLeft: 32,
+        marginLeft: 15,
         marginBottom: 16,
     },
     insetLink: {
