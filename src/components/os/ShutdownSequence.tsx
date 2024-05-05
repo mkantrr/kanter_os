@@ -39,9 +39,9 @@ const ShutdownSequence: React.FC<ShutdownSequenceProps> = ({
     };
 
     const NORMAL_SHUTDOWN = `Beginning Pre-Shutdown Sequence... ${_F}
-    Connecting to MKOS01/13:2000.${_F}.${_F}.${_F}
+    Connecting to MKOS01/06:2002.${_F}.${_F}.${_F}
     |
-    Established connection to MK0S01/13:2000, attempting data transfer.
+    Established connection to MK0S01/06:2002, attempting data transfer.
     |
     ${_F}
     |Analyzing data... Done.| ${_F}
@@ -50,16 +50,16 @@ const ShutdownSequence: React.FC<ShutdownSequenceProps> = ({
     |[${getTime()} START]| .${_F}.....${_X}.|............|.${_S}.|......|.${_S}...........${_M} |[Transfer Failed.]|
 
 
-    |(MKOS01/13:200:60099) [DEP_ANALYTICS_SERVER_ON_AFTER_SETUP_MIDDLEWARE] InvalidFormatting: 'onAnalyticsConversion' option received invalid parameters. Please contact a server administrator to resolve the issue.|
+    |(MKOS01/06:202:60099) [DEP_ANALYTICS_SERVER_ON_AFTER_SETUP_MIDDLEWARE] InvalidFormatting: 'onAnalyticsConversion' option received invalid parameters. Please contact a server administrator to resolve the issue.|
     ${_F}
-    |(MKOS01/13:200:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:00]|
-    |(MKOS01/13:200:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:01]
-    (MKOS01/13:200:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:03]
-    (MKOS01/13:200:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:05]
-    (MKOS01/13:200:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:08]
-    (MKOS01/13:200:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:12]
-    (MKOS01/13:200:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:14]
-    FATAL ERROR: (MKOS01/13:200:60099) Server became unresponsive and the transfer failed. Unable to shutdown computer. 
+    |(MKOS01/06:206:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:00]|
+    |(MKOS01/06:202:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:01]
+    (MKOS01/06:202:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:03]
+    (MKOS01/06:202:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:05]
+    (MKOS01/06:202:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:08]
+    (MKOS01/06:202:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:12]
+    (MKOS01/06:202:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:14]
+    FATAL ERROR: (MKOS01/06:202:60099) Server became unresponsive and the transfer failed. Unable to shutdown computer. 
     |
     Aborting shutdown sequence and rebooting.
 
@@ -70,7 +70,7 @@ const ShutdownSequence: React.FC<ShutdownSequenceProps> = ({
     `;
 
     const SHUTDOWN_3 = `
-    Damn${_S}.${_S}.${_S}. ${_M} You really wanna shutdown this computer huh?${_L}
+    Damn${_S}.${_S}.${_S}. ${_M} You really wanna shut this computer down, huh?${_L}
     Well, I hate to break it to you,${_S} but its impossible to shutdown...${_S} It will always reboot.
     ${_L}
     |Goodbye!|
@@ -83,8 +83,8 @@ const ShutdownSequence: React.FC<ShutdownSequenceProps> = ({
     const SHUTDOWN_4 = `
     Did you not read the last message?${_S} This computer will A${_F}L${_F}W${_F}A${_F}Y${_F}S${_F} reboot, the shutdown sequence is just here for show. It's not actually doing anything.
     ${_M}
-    I literally spent months on this website to give you other things to do.
-    You can play DOOM, Oregon Trail, Scrabble... but all you wanna do is shut the computer down.
+    I spent so much time adapting this website (originally by Henry Heffernan) to give you other things to do.
+    You can play Pac Em, DOOM, Tetris, SimCity 2000, Scrabble... but all you wanna do is shut the computer down.
     ${_L}
     |Goodbye Again!|
     ${_M}
@@ -113,7 +113,7 @@ const ShutdownSequence: React.FC<ShutdownSequenceProps> = ({
 
     In light of this HUGE milestone, let me try to provide some entertainment! ${_M}Counting one by one to my all time favorite number:
     ${_L}
-    7${_M},212${_M},313
+    0${_M},0.1${_M},0.2
     ${_M} Strap in! ${_S} | [Time remaining: Approximately 4,000 hours (0.5 numbers/second)]|
 
     1${_M},2${_M},3${_M},4${_M},5${_M},6${_M},7${_M},8${_M},9${_M},10${_M},11${_M},12${_M},13${_S}.${_S}.${_S}.
@@ -126,7 +126,7 @@ const ShutdownSequence: React.FC<ShutdownSequenceProps> = ({
     `;
 
     const SHUTDOWN_8 = `
-    Your commitment is admirable,${_S} truly. ${_M}And even though I don't want you to turn off my really cool and epic computer, ${_M} I think I'm ready to concede. ${_M}
+    Your commitment is admirable,${_S} truly. ${_M}And even though I don't want you to turn off my really cool simulated computer, ${_M} I think I'm ready to concede. ${_M}
 
     ${_L}
     |SIKE!!!|
@@ -140,7 +140,7 @@ const ShutdownSequence: React.FC<ShutdownSequenceProps> = ({
 
     You win${_S}.${_S}.${_S}.${_S} fair and square ${_M}
 
-    Truthfully I can't keep on spending time writing out these messages...${_M} and if the world you want to live in is a world without me (or my epic really cool and sick computer), ${_M}so be it.
+    Truthfully I can't keep on spending time writing out these messages...${_M} and if the world you want to live in is a world without me (or my epic really cool simulated computer), ${_M}so be it.
 
     ${_L}
     I won't forget you...

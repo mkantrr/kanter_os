@@ -38,17 +38,17 @@ const APPLICATIONS: {
         shortcutIcon: 'showcaseIcon',
         component: ShowcaseExplorer,
     },
-    pac_em: {
-        key: 'pac_em',
-        name: 'Pac Em',
-        shortcutIcon: 'pacEmIcon',
-        component: PacEM,
-    },
     doom: {
         key: 'doom',
         name: 'Doom',
         shortcutIcon: 'doomIcon',
         component: Doom,
+    },
+    pac_em: {
+        key: 'pac_em',
+        name: 'Pac Em',
+        shortcutIcon: 'pacEmIcon',
+        component: PacEM,
     },
     tetris: {
         key: 'tetris',

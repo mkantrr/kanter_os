@@ -1,10 +1,8 @@
 import React from 'react';
 // @ts-ignore
-import saga from '../../../assets/pictures/projects/software/saga.mp4';
-// @ts-ignore
 import computer from '../../../assets/pictures/projects/software/computer.mp4';
 // @ts-ignore
-import scroll from '../../../assets/pictures/projects/software/scroll.mp4';
+import automata from '../../../assets/pictures/projects/software/automata.png';
 import ResumeDownload from '../ResumeDownload';
 import VideoAsset from '../../general/VideoAsset';
 
@@ -17,25 +15,27 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
             <h3>Projects</h3>
             <br />
             <p>
-                Below are some of my favorite software projects I have worked on
-                over the last few years.
+                Below are some of my favorite software projects I have worked on.
             </p>
             <br />
             <ResumeDownload />
             <br />
             <div className="text-block">
-                <h2>henryheffernan.com</h2>
+                <h2>mattkanter.com</h2>
                 <br />
                 <p>
-                    henryheffernan.com is my portfolio website, and also the
-                    website you are on right now. This project was an absolute
-                    joy to make and challenged me both technically and
-                    creatively. Early in 2022, I knew I wanted to make an
-                    interactive portfolio to aid my job search. I eventually got
-                    the idea for this site around early February and began
-                    development early March. I've been developing it alongside
-                    my last semester at school and if you are reading this, it's
-                    pretty much done!
+                    mattkanter.com is my personal website, and also the
+                    website you are on right now. This project was heavily inspired from the original creation
+                    by <a rel="noreferrer" target="_blank" href="https://henryheffernan.com">
+                        <b>Henry Heffernan</b>
+                    </a>, but the adaptations I made to it challenged
+                    me both technically and creatively. In the endeavor to take Henry's
+                    code and make it my own, I learned how to emulate JSDOS games, how to use <b>Blender</b> (and more on 3D renderings),
+                    more about <b>React</b> and <b>TypeScript</b>, and more. I created a predecessor
+                    portfolio website similar in structure to this one, however much less cool looking. You
+                    can take a look at it over at <a rel="noreferrer" target="_blank" href="https://oldportfolio.matutu.dev">
+                        oldportfolio.matutu.dev
+                    </a>. The old one has much of the same structure and is created similarly in a React app.
                 </p>
                 <br />
                 <div className="captioned-image">
@@ -51,13 +51,15 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 <p>
                     Now, a quick technical breakdown of the site. The website is
                     split into two parts, the 3D site, and the 2D OS site. The
-                    3D site uses Three.js to render the scene and renders the 2D
-                    site inside of it using an iframe. The 2D OS site is a
-                    simple react site that is hosted{' '}
+                    3D site uses <b>Three.js</b> to render the scene and renders the 2D
+                    site inside of it using an iframe. The 3D site's scence models and texturing
+                    were created within <b>Blender</b>, and the source .glb models and .png baked textures
+                    for it are located in the repo for it at the link below. The 2D OS site is a
+                    simple TypeScript React site that is hosted{' '}
                     <a
                         rel="noreferrer"
                         target="_blank"
-                        href="https://henryheffernan.vercel.app/"
+                        href="https://os.mattkanter.com/"
                     >
                         here
                     </a>{' '}
@@ -73,10 +75,10 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://henryheffernan.com"
+                            href="https://mattkanter.com"
                         >
                             <p>
-                                <b>[3D Site]</b> - henryheffernan.com
+                                <b>[3D Site]</b> - mattkanter.com
                             </p>
                         </a>
                     </li>
@@ -84,10 +86,10 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://henryheffernan.vercel.app/"
+                            href="https://os.mattkanter.com/"
                         >
                             <p>
-                                <b>[OS Site]</b> - henryheffernan.vercel.app
+                                <b>[OS Site]</b> - os.mattkanter.com
                             </p>
                         </a>
                     </li>
@@ -95,7 +97,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://github.com/henryjeff/portfolio-website"
+                            href="https://github.com/mkantrr/dev-website"
                         >
                             <p>
                                 <b>[GitHub]</b> - 3D Site Repository
@@ -106,7 +108,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://github.com/henryjeff/portfolio-inner-site"
+                            href="https://github.com/mkantrr/kanter_os"
                         >
                             <p>
                                 <b>[GitHub]</b> - OS Site Repository
@@ -114,163 +116,91 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         </a>
                     </li>
                 </ul>
+                <br />
                 <p>
-                    I'm skipping over a lot of details in exchange for brevity,
-                    but I do plan on doing a more in depth breakdown for those
-                    interested sometime in the future. To get updates with that
-                    project feel free to follow me on twitter{' '}
-                    <a
-                        rel="noreferrer"
-                        target="_blank"
-                        href="https://twitter.com/henryheffernan"
-                    >
-                        @henryheffernan
-                    </a>
+                    I hope to keep this site up to date and add more flare to it as my career and life 
+                    continues. I have many ideas for continuations to this site such as a blog, but 
+                    for the time being though, I am extremely excited with how much I am able to 
+                    accomplish with this website in its current state and will proudly advertise 
+                    it as an extension of myself.
                 </p>
             </div>
             <div className="text-block">
-                <h2>Guntattchment Saga The Sequel</h2>
+                <h2>Automython Python Interpreter </h2>
+                <br />
                 <br />
                 <p>
-                    Guntattchment Saga or GSTS is a game I made with my good
-                    friend Scott Bass back in 2019. The game is a wave based top
-                    down shooter where you progress by building the most
-                    outrageous of weapons through attaching as many attachments
-                    on your weapon as you can. The game ceased development in
-                    2019 because we unfortunately both had packed school
-                    schedules and were unable to find the time to work on it.
+                    The image you see below is a <b>deterministic finite automata (DFA)</b> that accepts 
+                    all words over a language that end in '00' or '11'. 
+                    It is able to be generated with the interpreter that converts .theory files to tokens, 
+                    lexes them, parses them, and interprets them in accordance with compiler theory. 
+                    The {' '}
+                    <a rel="noreferrer" target="_blank" href="https://automython.matutu.dev/">
+                        <b>Automython</b>
+                    </a> language acts very similar to Python, only with more limitations on 
+                    types and usage of built-in functions only.
                 </p>
                 <br />
-                <div className="captioned-image">
-                    <VideoAsset src={saga} />
-                    <div style={styles.caption}>
+                <br />
+                <div style={{}}>
+                    <div
+                        style={{
+                            flex: 1,
+                            textAlign: 'justify',
+                            alignSelf: 'top',
+                            flexDirection: 'column',
+                        }}
+                    >
+                        <br />
+                        <br />
                         <p>
-                            <sub>
-                                <b>Figure 2: </b> Guntattchment Saga Gameplay
-                                demo, featuring the main character along with a
-                                few of our grunt and dasher enemies.
-                            </sub>
+                            This project originially started out as my senior Capstone project at UMW I 
+                            would complete to graduate with University Honors. 
+                            It originally started out as a proposal to create a whole new programming language, 
+                            writing a compiler that translates my designed syntax into machine code to run a 
+                            finite automata (either a deterministic finite automata (DFA) or non-deterministic (NFA), 
+                            or if time permitted since it was only a one semester project a Turing machine) and 
+                            output to the user a graph visualization of the inputted 5-tuple automata, 
+                            whether an optional input word was accepted or rejected by the automata, 
+                            and a table of transition functions/steps.
+                        </p>
+                        <br />
+                        <br />
+                        <br />
+                        <p>
+                            It slowly evolved as I worked closely with 
+                            my fantastic professor, <a rel="noreferrer" target="_blank" href="https://www.marshallandrew.net/">
+                                <b>Dr. Andrew Marshall</b>
+                            </a> into creating an interpreter to <b>Python</b> to make use of 
+                            pre-existing visualization libraries and the small scope of the operations this 
+                            language would have to perform. After all, what's the point of creating a 
+                            whole new programming language that only performs one basic function when 
+                            you could instead create a programming language that translates to a more 
+                            widely used and broader use case programming language to make use of already 
+                            written higher level logic?
+                        </p>
+                        <br />
+                        <br />
+                        <br />
+                        <p>
+                            This project, while mostly completed in an academic project plan sense, 
+                            is published to PyPI to be installed via pip and also hosts a 
+                            documentation page as a subdomain of this website. 
+                            For the future, I will be trying my best to keep Automython updated 
+                            and to provide continual improvements and new features to both the 
+                            interpreter architecture and new structures of computational theory.
                         </p>
                     </div>
-                </div>
-                <p>
-                    Guntattchment Saga was a really fun project to work on and
-                    had a multitude of challenges. An interesting challenge that
-                    you may not even notice was the rotation of objects such as
-                    the players weapon. Rotating pixel art is a very difficult
-                    thing to do because in the world of pixels you are dealing
-                    with such a little amount of information. Even a single
-                    misplaced pixel can cause a sprite to read in a totally
-                    different and unintended way. To deal with this we developed
-                    an algorithm to prioritize outlines, while rotating the
-                    insides with a simple Nearest Neighbor algorithm. Doing so
-                    resulted in a relatively readable sprite when rotating
-                    sprites. It was a surprisingly difficult challenge as it
-                    intersected both art and programming, but was fun to work on
-                    overall.
-                </p>
-                <br />
-                <h3>Links:</h3>
-                <ul>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://github.com/scottbass47/gsts"
-                        >
-                            <p>
-                                <b>[GitHub]</b> - Guntattchment Saga The Sequel
-                                Unity Repository
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://github.com/henryjeff/gsts_assets"
-                        >
-                            <p>
-                                <b>[GitHub]</b> - Guntattchment Saga The Sequel
-                                Assets Repository
-                            </p>
-                        </a>
-                    </li>
-                </ul>
-                <p>
-                    Unfortunately, the game currently is not in a releasable
-                    state and so there is no demo available online. If this ever
-                    changes, however, a link to the game will be added here.
-                </p>
-            </div>
-            <div className="text-block">
-                <h2>Skip the Scroll</h2>
-                <br />
-                <p>
-                    While working at Hover, I spent a lot of time on GitHub
-                    issue pages looking for answers and solutions to problems I
-                    had run into. I would always find myself sifting though the
-                    comments trying to find the right answer, which usually had
-                    the most upvotes and positive reactions. With that
-                    information, I decided to create a very simple chrome
-                    extension that would sift through all the comments on the
-                    page, sort them by positive reactions, and then allow you to
-                    traverse them from most positive reactions to least positive
-                    reactions.
-                </p>
-                <br />
-                <div className="captioned-image">
-                    <VideoAsset src={scroll} />
-                    <p style={styles.caption}>
+                <div style={styles.verticalImage} className="captioned-image">
+                    <img src={automata} style={styles.image} alt="" />
+                    <p>
                         <sub>
-                            <b>Figure 3:</b> Skip the Scroll in action, finding
-                            the highest rated comments and scrolling right to
-                            them
+                            <b>Figure 2:</b> A DFA that accepts all words over a language that end
+                            with '00' or '11', over the input string '10011'.
                         </sub>
                     </p>
                 </div>
-                <p>
-                    The extension is open source and currently released on the
-                    Chrome web store. Skip the Scroll is obviously not a project
-                    with massive scope, but was fun to make and dive into the
-                    world of browser extensions. I wanted to showcase since it's
-                    a developer tool and I wanna give it some visibility for
-                    those who might find it useful.
-                </p>
-                <br />
-                <h3>Links:</h3>
-                <ul>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://github.com/henryjeff/skip-the-scroll"
-                        >
-                            <p>
-                                <b>[GitHub]</b> - Skip the Scroll Repository
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href="https://chrome.google.com/webstore/detail/skip-the-scroll/mfehannpjmgfagldoilpngeoecdfgmnd"
-                        >
-                            <p>
-                                <b>[Chrome Web Store]</b> - Skip the Scroll
-                            </p>
-                        </a>
-                    </li>
-                </ul>
-                <p>
-                    If you are a developer and have also found yourself
-                    scrolling through github comment after github comment saying
-                    "i also have this problem...", then I highly recommend you
-                    check out Skip the Scroll to save you some of your precious
-                    time. If you like it, feel free to star it on GitHub and
-                    rate it on the Chrome web store.
-                </p>
+            </div>
             </div>
             <ResumeDownload />
         </div>
@@ -284,6 +214,17 @@ const styles: StyleSheetCSS = {
     },
     caption: {
         width: '80%',
+    },
+    verticalImage: {
+        alignSelf: 'center',
+        // width: '80%',
+        marginLeft: 32,
+        flex: 0.8,
+
+        alignItems: 'center',
+        // marginBottom: 32,
+        textAlign: 'center',
+        flexDirection: 'column',
     },
 };
 

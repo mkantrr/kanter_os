@@ -2,6 +2,9 @@
   "name": "kanter-os",
   "version": "0.0.1",
   "private": true,
+  "homepage": "https://os.mattkanter.com",
+  "repository": "https://github.com/mkantrr/kanter_os",
+  "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",

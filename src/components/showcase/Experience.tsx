@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ResumeDownload from './ResumeDownload';
 
 export interface ExperienceProps {}
@@ -10,232 +11,635 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
-                        <h1>Hover</h1>
+                        <h1>Career</h1>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div style={styles.headerContainer}>
+                <div style={styles.header}>
+                    <div style={styles.headerRow}>
+                        <h2>Naval Surface Warfare Center (NSWCDD)</h2>
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href={'https://hover.gg/'}
+                            href={'https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/'}
                         >
-                            <h4>www.hover.gg</h4>
+                            <h4>www.navsea.navy.mil</h4>
                         </a>
                     </div>
                     <div style={styles.headerRow}>
-                        <h3>Frontend Engineer</h3>
+                        <h3>Software Engineer</h3>
                         <b>
-                            <p>Summer 2020 - Fall 2021</p>
+                            <p>May 2024 - Present</p>
                         </b>
                     </div>
                 </div>
             </div>
             <div className="text-block">
                 <p>
-                    Targeted towards online content creators and streamers
-                    looking to build a brand, Hover is the home of over 150K
-                    users. Written in Typescript using React, React-Native,
-                    Framer, Express, and Redux.
+                    I am slated to begin working as a sofware engineer at the 
+                    Naval Surface Warfare Center Dahlgren Divison in May, where I will apply my 
+                    past experiences and skills to a full-time public sector position.
                 </p>
                 <br />
-                <ul>
-                    <li>
-                        <p>
-                            Architected and engineered the vertical scrolling
-                            discover player which, at its daily peak, was
-                            responsible for generating over 600,000 views across
-                            20,000 active users.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Designed and implemented multiple features to
-                            increase app usability and user experience while
-                            ensuring the quality, maintainability and
-                            scalability of the front end as the user base grew
-                            by over 50,000.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Coordinated major refactors targeted towards app
-                            optimization and performance resulting in a smoother
-                            user experience and accomplished by eliminating
-                            redundant re-renders and API calls by over 50%.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Directed and executed an internal migration of 3
-                            individual repositories to a single monorepo,
-                            greatly reducing overhead for developing new
-                            features, fixing bugs, and managing dependencies.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Rebuilt the website with React and shared mobile app
-                            components allowing users to access a wide variety
-                            of app interactions entirely on the web, resulting
-                            in over 700,000 total site visits.
-                        </p>
-                    </li>
-                </ul>
             </div>
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
-                        <h1>BrACS</h1>
+                        <h2>UMW</h2>
                         <a
                             target="_blank"
                             rel="noreferrer"
-                            href={'https://bracs.co/'}
+                            href={'https://technology.umw.edu/'}
                         >
-                            <h4>www.bracs.co</h4>
+                            <h4>www.umw.edu</h4>
                         </a>
                     </div>
                     <div style={styles.headerRow}>
-                        <h3>Team Lead & Engineer</h3>
+                        <h3>Applications Developer Intern (Student Aide Programmer)</h3>
                         <b>
-                            <p>Fall 2021 - Spring 2022</p>
+                            <p>September 2022 - May 2024</p>
                         </b>
                     </div>
                 </div>
             </div>
             <div className="text-block">
                 <p>
-                    Supervised and developed the front end of bracs.co, a
-                    beautifully simple and effective bracket creation and
-                    management engine. Written in Typescript using React and
-                    deployed using AWS Elastic Beanstalk.
+                For a majority of my time in undergrad I provided my assistance and expertise to UMW's 
+                Enterprise Application Services department, 
+                who manages UMW's internal databases and provides statistical analytics and internal 
+                information to UMW's other internal departments for further administrative use. 
+                In becoming an indispensable student aid, I:
                 </p>
                 <br />
                 <ul>
                     <li>
                         <p>
-                            Managed the project and team members by conducting
-                            bi-weekly stand-ups.
+                            Wrote <b>PL/SQL</b> queries and <b>Power BI</b> paginated reports.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Architected bracket view UI using React Flow and
-                            custom bracket data types built from binary trees.
+                            Completed, documented, and tested tickets through the <b>Agile JIRA</b> workflow 
+                            management system.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Created conversion algorithms to serialize bracket
-                            tree data to allow for saving in the cloud.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Implemented bracket generation utilities which
-                            employ gray code for proper team seeding and
-                            placement.
+                            Provided other miscellaneous technological solutions, 
+                            such as training new student aides and configuring settings in connecting to <b>Oracle</b> and <b>MySQL</b> databases.
                         </p>
                     </li>
                 </ul>
+                <p>
+                This experience also provided me valuable in-person workplace experience, 
+                and allowed me to gain experience in explaining highly technical and complex problems 
+                such as run-time boundaries or specific <b>SQL</b> language issues to career experts.
+                </p>
             </div>
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
-                        <h1>K-F/X</h1>
+                        <h2>KeyCaliber</h2>
                         <a
                             target="_blank"
                             rel="noreferrer"
-                            href={'https://kfxnyc.com/'}
+                            href={'https://keycaliber.com/'}
                         >
-                            <h4>www.kfxnyc.com</h4>
+                            <h4>www.keycaliber.com</h4>
                         </a>
                     </div>
                     <div style={styles.headerRow}>
-                        <h3>Special Effects Technician</h3>
+                        <h3>Software Engineer Intern</h3>
                         <b>
-                            <p>Fall 2019, Summer 2021</p>
+                            <p>January 2024 - April 2024</p>
                         </b>
                     </div>
                 </div>
             </div>
             <div className="text-block">
                 <p>
-                    Applied problem solving and technical skills to operate
-                    large equipment such as rain machines, fog machines, small
-                    explosives and general rigging with a professional crew of
-                    50+ people.
+                    For my spring senior semester at UMW, I dedicated a large portion of my time to 
+                    part-time work for KeyCaliber for the second time. Going back to KeyCaliber, 
+                    I did not go through another interview process after I expressed my interest in 
+                    coming back for the semester, and I was given creative freedom to chose a variety of projects 
+                    to work on. The project I decided on was to implement <b>Auth0 Role Based Access Control (RBAC)</b> throughout 
+                    their application stack to streamline their user login experience and provide a 
+                    means for client admins to manage their users on their own. 
+                    Their application stack involves <b>Python/Flask</b> and <b>PostgreSQL</b> as their backend frameworks, 
+                    and <b>JavaScript/React</b> in their frontend. In doing so, I:
                 </p>
                 <br />
-                <h3 style={styles.indent}>Screen Credits:</h3>
                 <ul>
-                    <li style={styles.row}>
-                        <p>• Ray Donovan</p>
+                    <li>
                         <p>
-                            [{' '}
-                            <a
-                                href="https://www.sho.com/ray-donovan"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                SHOWTIME
-                            </a>{' '}
-                            ]
+                            Furthered my knowledge on <b>JWKs/JWTs</b>, Access/ID tokens, <b>Open ID Connect (OIDC)</b> authorization 
+                            standards, validation techniques, and the <b>Proof Key for Code Exchange (PKCE)</b> authentication flow to name a few.
                         </p>
                     </li>
-                    <li style={styles.row}>
-                        <p>• Ray Donovan: The Movie</p>
+                    <li>
                         <p>
-                            [{' '}
-                            <a
-                                href="https://www.sho.com/titles/3508117/ray-donovan-the-movie"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                SHOWTIME
-                            </a>{' '}
-                            ]
+                            Gained valuable practical experience in problem solving situations that involved 
+                            a sizeable product/codebase with real marketable consequences.
                         </p>
                     </li>
-                    <li style={styles.row}>
-                        <p>• Hightown</p>
+                    <li>
                         <p>
-                            [{' '}
-                            <a
-                                href="https://www.starz.com/us/en/series/hightown/57463"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                STARZ
-                            </a>{' '}
-                            ]
+                            Practiced my skills in communicating detailed and complex issues in a high level 
+                            way through technical ad hoc demonstrations.
                         </p>
                     </li>
-                    <li style={styles.row}>
-                        <p>• Bull</p>
+                    <li>
                         <p>
-                            [{' '}
-                            <a
-                                href="https://www.cbs.com/shows/bull/"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                CBS
-                            </a>{' '}
-                            ]
-                        </p>
-                    </li>
-                    <li style={styles.row}>
-                        <p>• At Home with Amy Sedaris</p>
-                        <p>
-                            [{' '}
-                            <a
-                                href="https://www.trutv.com/shows/at-home-with-amy-sedaris"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                truTV
-                            </a>{' '}
-                            ]
+                            Established regular scrum cadence with supervisors to perform standups to analyze 
+                            current solutions and blockers.
                         </p>
                     </li>
                 </ul>
+                <p>
+                    KeyCaliber was one of my favorite positions I have had, and their down to earth, 
+                    collaborative, and supportive environment made learning that much easier.  
+                </p>
+            </div>
+            <div style={styles.headerContainer}>
+                <div style={styles.header}>
+                    <div style={styles.headerRow}>
+                        <h2>SitScape</h2>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href={'https://sitscape.com/'}
+                        >
+                            <h4>www.sitscape.com</h4>
+                        </a>
+                    </div>
+                    <div style={styles.headerRow}>
+                        <h3>Software Engineer Intern</h3>
+                        <b>
+                            <p>June 2023 - August 2023</p>
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div className="text-block">
+                <p>
+                    Between my junior and senior years of my undergrad, I worked full time 
+                    during the summer as a software engineering intern at SitScape helping them to improve a 
+                    link/network graph widget that was a vital piece of their site. 
+                    My willingness to dig in and work problems out made me a cherished part of the company's 
+                    engineering team.
+                </p>
+                <br />
+                <ul>
+                    <li>
+                        <p>
+                            Participated in a weekly agile cadence with the engineering team and ad hoc 
+                            technical demonstrations.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Researched and integrated the <b>D3.js</b> library and created different visualization 
+                            patterns using dynamic user I/O data understood from comprehension of the broader 
+                            codebase.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Performed back-end programming and database management operations 
+                            with <b>PHP</b> and <b>PHPMyAdmin</b> to establish the necessary pipelines and database 
+                            structure to allow for that seamless dynamic user I/O data.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Provided a myriad of software documentation, both in-line and technical 
+                            documents/comments to an unorganized and massive codebase.
+                        </p>
+                    </li>
+                </ul>
+                <p>
+                    This experience provided valuable experience in an established, corporate environment 
+                    focused primarily on maintaining their product for their clients. This allowed me to 
+                    further my abilities in applying my conceptual knowledge of computer science principles 
+                    in a new environment with a practical application.
+                </p>
+            </div>
+            <div style={styles.headerContainer}>
+                <div style={styles.header}>
+                    <div style={styles.headerRow}>
+                        <h2>South African Travel</h2>
+                    </div>
+                    <div style={styles.headerRow}>
+                        <h3>Career Break</h3>
+                        <b>
+                            <p>May 2023 - June 2023</p>
+                        </b>
+                    </div>
+                </div>
+            </div> 
+            <div className="text-block">
+                <p>
+                    After planning for years with my lifelong friends (two of whom were born and somewhat 
+                    raised there), we traveled to South Africa as a summer vacation and as a reward for 
+                    ourselves for all of our hard work in life. This amazing, once-in-a-lifetime, 
+                    culturally enlightening, and personally enlightening experience was the only reason why 
+                    I did not start the software engineer internship with SitScape in May.
+                </p>
+            </div>
+            <div style={styles.headerContainer}>
+                <div style={styles.header}>
+                    <div style={styles.headerRow}>
+                        <h2>Gigasheet</h2>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href={'https://gigasheet.com/'}
+                        >
+                            <h4>www.gigasheet.com</h4>
+                        </a>
+                    </div>
+                    <div style={styles.headerRow}>
+                        <h3>Software Engineer Intern</h3>
+                        <b>
+                            <p>October 2022 - January 2023</p>
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div className="text-block">
+                <p>
+                    In an effort to fill up my free time during my fall semester of 2022 at UMW, I 
+                    participated in an internship program through the <b>Commonwealth Cyber Initiative (CCI)</b> with 
+                    Gigasheet. Gigasheet provides a website product that does better and more fine grained 
+                    statistical analysis on spreadsheets, and larger than ones Excel could ever handle, 
+                    to their clients. Unfortunately, Gigasheet didn't really have a set plan for me for 
+                    the course of my internship, so I worked with a colleague to document specific API 
+                    endpoints Gigasheet had written in the <b>Go</b> programming language with a specific 
+                    version of <b>SwaggerDocs (swaggo)</b>.
+                </p>
+            </div>
+            <div style={styles.headerContainer}>
+                <div style={styles.header}>
+                    <div style={styles.headerRow}>
+                        <h2>KeyCaliber</h2>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href={'https://keycaliber.com/'}
+                        >
+                            <h4>www.keycaliber.com</h4>
+                        </a>
+                    </div>
+                    <div style={styles.headerRow}>
+                        <h3>Software Engineer Intern</h3>
+                        <b>
+                            <p>May 2022 - August 2022</p>
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div className="text-block">
+                <p>
+                    This position at KeyCaliber was my first ever practical experience in the computer science 
+                    industry. KeyCaliber tasked a cohort of interns, including myself, with creating a 
+                    Chrome web extension that connects with their main product dashboard to provide the key 
+                    insights their product provides without having to go back and forth between browser tabs.
+                    This web extension continues to be today a crucial part of their deployment and product 
+                    pitch to their clients. In working on this software development project, my learning 
+                    expanded by:
+                </p>
+                <br />
+                <ul>
+                    <li>
+                        <p>
+                            Becoming somewhat of a leader among my cohort in comprehending critical concepts 
+                            and communicating my understanding to them as well as encouraging them to 
+                            participate and helping them whenever they needed it.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Participating in an scrum management environment with every other day standups 
+                            with the whole team to sync on current and future tasks/blockers.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Building up my expertise in <b>JavaScript</b> and <b>React.js</b> out 
+                            of <b>zero prior experience</b>, becoming an indespensable member of the 
+                            development team within a couple weeks of bootstrapping web development 
+                            concepts and low level details.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Learning how to use web UI frameworks such as <b>Material-UI</b>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Working with Chrome's <b>web extension API</b> to interact with <b>localStorage</b> and <b>cookies</b>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Working with manifests and package managers such as <b>npm</b> or <b>yarn</b> to ensuring 
+                            minimal amounts of vulnerable dependencies.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Working with a <b>REST API</b> to draw data from external sources into resuable 
+                            components.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Establishing foundational knowledge in <b>HTML</b> and <b>CSS</b>.
+                        </p>
+                    </li>
+                </ul>
+                <p>
+                    KeyCaliber was one of my favorite positions I have had, and their down to earth, 
+                    collaborative, and supportive environment made learning that much easier.  
+                </p>
+            </div>
+            <br />
+            <br />
+            <div style={styles.headerContainer}>
+                <div style={styles.header}>
+                    <div style={styles.headerRow}>
+                        <h1>Education</h1>
+                    </div>
+                </div>
+            </div> 
+            <br />
+            <div style={styles.headerContainer}>
+                <div style={styles.header}>
+                    <div style={styles.headerRow}>
+                        <h2>Georgia Instituate of Technology</h2>
+                    </div>
+                    <div style={styles.headerRow}>
+                        <h3>Master of Science</h3>
+                    </div>
+                    <div style={styles.headerRow}>
+                        <h3>Computer Science</h3>
+                        <b>
+                            <p>August 2024 - Present</p>
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div className="text-block">
+                <p>
+                    Currently undertaking my graduate education at Georgia Tech, and I couldn't be more stoked.
+                    This section will be filled in once I have completed my masters graduate degree.
+                </p> 
+            </div>
+            <br />
+            <div style={styles.headerContainer}>
+                <div style={styles.header}>
+                    <div style={styles.headerRow}>
+                        <h2>University of Mary Washington</h2>
+                    </div>
+                    <div style={styles.headerRow}>
+                        <h3>Bachelor of Science</h3>
+                    </div>
+                    <div style={styles.headerRow}>
+                        <h3>Computer Science and Communication & Digital Studies</h3>
+                    </div>
+                    <div style={styles.headerRow}>
+                        <h3>Cybersecurity Minor</h3>
+                        <b>
+                            <p>August 2020 - May 2024</p>
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div className="text-block">
+                <p>
+                    I graduated with University Honors and Summa Cum Laude (Highest Distinction) 
+                    from the University of Mary Washington College of Arts and Sciences with a 
+                    double major in Computer Science and Communication & Digital Studies, and a minor in 
+                    Cybersecurity. I was also inducted into <b>Chi Alpha Sigma</b>, the Student Athlete honors society
+                    and <b>Lambda Phi Eta</b>, the communications honors society. My final GPA was <b>3.74</b>.
+                </p>
+                <br />
+                <p>
+                    I kept myself busy throughout my time at UMW by completing numerous internships, working part-time 
+                    for the IT department (refer to position above), participating in <b>Men's Club Volleyball</b> and playing 
+                    competitively and coaching a video game called Rocket League for <b>UMW Esports</b>. 
+                    One of my biggest passions, which is one of the reasons why I chose a double major such as 
+                    Communication, is coaching and helping people become the best versions of themselves they can be. 
+                    This includes me as well, and one of those ways I try to better myself is completing personal projects 
+                    I am interested in or that I have completed in accordance with my schooling. As is the goal of higher 
+                    education, I learned a great deal of theoretical knowledge and hands-on experience with a myriad of 
+                    concepts and technologies.
+                </p>
+                <ul>
+                    <li>
+                        <p>
+                            I gained knowledge on programming paradigms 
+                            such as <b>Object Oriented (OOP)</b>, <b>Functional</b>, and <b>Event-Driven</b> programming.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            I wrote object oriented code in <b>Python</b>, <b>Java</b>, and <b>JavaScript</b>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            I wrote low level OS and process code in <b>C</b>, as well as implementing some 
+                            data structures and high level algorithms.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            I wrote <b>assembly</b> and <b>C</b> code in tandem to understand computer 
+                            architecture and hardware/software interactions.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            I became well versed in <b>Vim</b>, <b>CLI</b> inner workings, and <b>Unix</b> systems.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            I applied mathematical computing foundations to small, detail-oriented programming 
+                            solutions to implement data structures and algorithms such as linked lists, 
+                            stacks, heaps, etc.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            I studied and implemented a variety of cryptographic methods, such as 
+                            Caesar, Augustus, and the standard for web encryption: Advanced Encryption 
+                            Standard (AES).
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            I studied and implemented <b>relational and NoSQL databases</b>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            I exploited <b>XSS</b>, <b>SQLi</b>, and <b>CSRF</b> vulnerabilities.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            I exploited buffer overflows, format strings, system libraries, and used 
+                            malware analysis software such as <b>Ghidra</b> and <b>Kali Linux</b> programs.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            I implemented a variety of socket programs as well as configuring <b>Virtual Machines (VM)</b>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            I created artificial intelligence agents that solved coverage problems, 
+                            Chess playing, <b>A*/Djikstra/greedy searching</b>, n-Queens Chess board puzzles, 
+                            Wumpus World players, and Clue game players.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            I studied Operating System process scheduling, virtualization, 
+                            concurrency, persistence, and security.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            I created a simplistic version of the <b>Unix shell</b>. 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            I implemented a <b>Multi-Level Feedback Queue (MLFQ)</b> scheduler, lottery, 
+                            and modified round robin scheduler into {' '}
+                            <a rel="noreferrer" target="_blank" href="https://pdos.csail.mit.edu/6.828/2023/xv6.html">xv6</a>, a barebones OS run in <b>QEMU</b>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            I studied computational theory, learning 
+                            about <b>finite automata (DFA/NFA)</b>, Turing machines, and the 
+                            pumping lemma (decision problems).
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            I studied software engineering methodologies, such as 
+                            Agile/Scrum, Waterfall model, Iterative, DevOps, 
+                            Functional/Non-functional requirements, etc.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            I went through the Agile development process 
+                            (Requirements, Design, Implementation, Testing, Deployment) 
+                            in a codebase for a non-profit organization {' '}
+                            <a rel="noreferrer" target="_blank" href="https://www.olddominionhumanesociety.org/">(ODHS)</a> to create a new 
+                            full stack volunteer management system. 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            I developed a chatbot using OpenAI's <b>GPT4 LLM model</b> to mimic my personality in a 
+                            text messaging medium as an experiment into the Turing test, as well as 
+                            inadvertently creating a trainable chatbot based off of provided .pdf or .txt 
+                            files through the <b>Tesseract OCR</b> library (specifically for PDFs) in <b>Python</b>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            I wrote a variety of essays on computer ethics and the propagation of 
+                            digital rhetoric within new media and emerging technologies 
+                            (such as Generative AI).
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            I studied compiler theory and everything that goes along with it in the 
+                            mythical "Dragon Book" (insert intense music here).
+                        </p>
+                    </li>
+                </ul>
+                <p>
+                    In my final semester, I created a simplistic programming language interpreter 
+                    designed to help current computational theory students understand finite automata easier. 
+                    This project acted as my Honors Capstone project, and can be found on the {' '}
+                    <Link to='/projects/software'>Software Projects</Link> page.
+                </p>
+            </div>
+            <br />
+            <div style={styles.headerContainer}>
+                <div style={styles.header}>
+                    <div style={styles.headerRow}>
+                        <h2>Frank W. Cox High School</h2>
+                        <b>
+                            <p>September 2016 - June 2020</p>
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div className="text-block">
+                <p>
+                    I graduated from Cox HS with a resounding <b>4.42 weighted GPA</b> out of a 4.0 scale. 
+                    I was ranked <b>20th</b> out of almost 400 students in my graduating class. 
+                    I was able to achieve this by taking a multitude of {' '}
+                    <a rel="noreferrer" target="_blank" href="https://www.collegeboard.org/">CollegeBoard</a> Advanced Placement (AP) 
+                    classes, including:
+                </p>
+                <ul>
+                    <li>
+                        <p>AP Biology</p>
+                    </li>
+                    <li>
+                        <p>AP Calculus BC</p>
+                    </li>
+                    <li>
+                        <p>AP Capstone Seminar</p>
+                    </li>
+                    <li>
+                        <p>AP Capstone Research</p>
+                    </li>
+                    <li>
+                        <p>AP Computer Science A</p>
+                    </li>
+                    <li>
+                        <p>AP English Language and Composition</p>
+                    </li>
+                    <li>
+                        <p>AP English Literature and Composition</p>
+                    </li>
+                    <li>
+                        <p>AP European History</p>
+                    </li>
+                    <li>
+                        <p>AP Human Geography</p>
+                    </li>
+                    <li>
+                        <p>AP Psychology</p>
+                    </li>
+                    <li>
+                        <p>AP United States Government</p>
+                    </li>
+                    <li>
+                        <p>AP United States History</p>
+                    </li>
+                </ul>
+                <p>
+                    During my time in high school, I was also a member of the National Honors Society and the 
+                    Debate Club.
+                </p>
             </div>
         </div>
     );

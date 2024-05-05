@@ -72,7 +72,7 @@ const Projects: React.FC<ProjectsProps> = (props) => {
             <br />
             <p>
                 Click on one of the areas below to check out some of the work I've done over the years
-                in each category. This is of course just a cohort of my time and effort, but feel free to
+                in each category. This is of course only a segment of my time and effort, but feel free to
                 get in touch if you want to learn more. Enjoy!
             </p>
             <br />

@@ -42,7 +42,7 @@ const About: React.FC<AboutProps> = (props) => {
                 <p>
                     I grew up in Virginia Beach, VA with a loving family.
                     I think I played almost every sport imaginable as a young child, but most fell on deaf ears 
-                    in exchange for playing playing Wii Sports, Super Smash Brothers Brawl, Super Mario Galaxy (1 or 2),
+                    in exchange for playing Wii Sports, Super Smash Brothers Brawl, Super Mario Galaxy (1 or 2),
                     or any of the multitude of Kirby games. It is with this infatuation with video games that I started to 
                     develop a healthy love and curiousity for computer systems. 
                     I was quite the disobedient software user, trying to homebrew my Nintendo DS and 3DS, jailbreak my iPhone,
@@ -60,8 +60,10 @@ const About: React.FC<AboutProps> = (props) => {
                 <br />
                 <p>
                     This love never seemed to go away through my grade school years, and once Advanced Placement (AP) Computer Science
-                    was offered as a class during my senior year at Frank W. Cox High School, I couldn't pass up the opportunity to expand
-                    my knowledge to programming. This also occured during the rise of social media usage among all teenagers and young adults
+                    was offered as a class during my senior year at {' '}
+                    <a rel="noreferrer" target="_blank" href="https://coxhs.vbschools.com/">Frank W. Cox High School</a>, 
+                    I couldn't pass up the opportunity to expand my knowledge to programming. 
+                    This also occured during the rise of social media usage among all teenagers and young adults
                     and the implications that new digital rhetoric and media might impact our society, and I continued to find learning about
                     and studying communication across computer systems fascinating.
                 </p>
@@ -85,7 +87,7 @@ const About: React.FC<AboutProps> = (props) => {
                         <br />
                         <p>
                             In the Fall of 2020 during the Great COVID-19 War (satirically), I matriculated into UMW as an undergraduate
-                            seeking my bachelors degree in my double major of Computer Science & Communication and Digital Studies with
+                            seeking my bachelors degree in my double major of Computer Science and Communication & Digital Studies with
                             a minor in Cybersecurity. At the end of my sophomore year I secured an internship with {' '}
                             <a  rel="noreferrer" target="_blank" href="https://keycaliber.com">KeyCaliber</a>, a D.C. based software company 
                             aimed at quantifying risk management and company asset vulnerabilities. 
@@ -153,7 +155,7 @@ const About: React.FC<AboutProps> = (props) => {
                         <br />
                         <p>
                             Alongside UMW Esports, I was also an integral player on the{' '}
-                            <a  rel="noreferrer" target="_blank" href="https://www.instagram.com/umwmensvolleyball">UMW Men's Club Volleyball</a> team 
+                            <a  rel="noreferrer" target="_blank" href="https://www.instagram.com/umwmensvolleyball">UMW Mens Club Volleyball</a> team 
                             both in a leadership role and as a vital part of our travel team in competing intercollegiately against other schools
                             that were mostly within Virgina and the Greater D.C. area. Volleyball will forever be a passion of mine, partly
                             because I am good at it, partly because Reese also loves it, but mostly because I love and enjoy the
@@ -178,7 +180,7 @@ const About: React.FC<AboutProps> = (props) => {
                         <img src={relationship} style={styles.image} alt="" />
                         <p>
                             <sub>
-                                <b>Figure 3:</b> Mi amor Reese and I :)
+                                <b>Figure 3:</b> Mi amor Reese and I, 2022 :)
                             </sub>
                         </p>
                     </div>
@@ -189,11 +191,15 @@ const About: React.FC<AboutProps> = (props) => {
                     <img src={volleyball} style={styles.image} alt="" />
                     <p>
                         <sub>
-                            <b>Figure 4:</b> Me (light blue shirt, right) with our men's and women's 
+                            <b>Figure 4:</b> Me (light blue shirt, right) with our mens and womens 
                             volleyball clubs at our annual alumni tournament.
                         </sub>
                     </p>
                 </div>
+                <br />
+                <p>
+                    <b>P.S.</b> There is an easter egg hidden in this website. See if you can find it :) <b>Hint:</b> KanterOS operations.
+                </p>
             </div>
         </div>
     );
