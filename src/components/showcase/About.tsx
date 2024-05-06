@@ -166,7 +166,7 @@ const About: React.FC<AboutProps> = (props) => {
                         <br />
                         <br />
                         <br />
-                        <p>
+                        <p style={{textAlign: "left"}}>
                             Any reason you might have for contacting me is acceptable (except for the obvious, like spam, death threats, etc.). I would love to hear from
                             you! You can reach me through the{' '}
                             <Link to="/contact">contact page</Link> or shoot me an email
