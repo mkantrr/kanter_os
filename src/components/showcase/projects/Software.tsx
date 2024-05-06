@@ -125,6 +125,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     it as an extension of myself.
                 </p>
             </div>
+            <br />
             <div className="text-block">
                 <h2>Finite Automata Comprehension Interpreter </h2>
                 <br />
@@ -200,7 +201,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                                     href="https://github.com/mkantrr/automython"
                                 >
                                     <p>
-                                        <b>[GITHUB]</b> - Automython Source Code
+                                        <b>[GitHub]</b> - Automython Source Code
                                     </p>
                                 </a>
                             </li>
@@ -222,7 +223,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                                     href="https://automython.matutu.dev"
                                 >
                                     <p>
-                                        <b>[DOCS]</b> - Automython Documentation
+                                        <b>[Docs Site]</b> - Automython Documentation
                                     </p>
                                 </a>
                             </li>
