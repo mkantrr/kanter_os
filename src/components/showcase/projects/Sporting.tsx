@@ -57,7 +57,7 @@ const SportingProjects: React.FC<SportingProjectsProps> = (props) => {
                         </a>, and{' '}
                         <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/kranston-blakey-2367a0276/">
                             Kranston Blakey
-                        </a> for encouraging my obsession and addiction with playing volleyball, even through 
+                        </a> for encouraging my obsession with and addiction to playing volleyball, even through 
                         knee pain and suffering (Harsha) {'>'}:(. 
                     </p>
                     </div>

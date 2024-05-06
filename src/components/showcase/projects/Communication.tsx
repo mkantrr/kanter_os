@@ -26,9 +26,6 @@ const CommunicationProjects: React.FC<CommunicationProjectsProps> = (props) => {
             <div className="text-block">
                 <h2 style={{textAlign: "left"}}>Simulating Communication Applications in Agent-Based Modeling</h2>
                 <br />
-                <p>
-                    That's a long title. I know. We'll get to it, and talk about what it means. 
-                </p>
                 <div className="captioned-image">
                     <img src={network} alt="" />
                     <p>

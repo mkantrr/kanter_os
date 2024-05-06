@@ -126,7 +126,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 </p>
             </div>
             <div className="text-block">
-                <h2>Automython Python Interpreter </h2>
+                <h2>Finite Automata Comprehension Interpreter </h2>
                 <br />
                 <br />
                 <p>
@@ -190,6 +190,43 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                             and to provide continual improvements and new features to both the 
                             interpreter architecture and new structures of computational theory.
                         </p>
+                        <br />
+                        <h3>Links:</h3>
+                        <ul>
+                            <li>
+                                <a
+                                    rel="noreferrer"
+                                    target="_blank"
+                                    href="https://github.com/mkantrr/automython"
+                                >
+                                    <p>
+                                        <b>[GITHUB]</b> - Automython Source Code
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    rel="noreferrer"
+                                    target="_blank"
+                                    href="https://pypi.org/project/automython/"
+                                >
+                                    <p>
+                                        <b>[PyPI]</b> - Automython Project Link
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    rel="noreferrer"
+                                    target="_blank"
+                                    href="https://automython.matutu.dev"
+                                >
+                                    <p>
+                                        <b>[DOCS]</b> - Automython Documentation
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 <div style={styles.verticalImage} className="captioned-image">
                     <img src={automata} style={styles.image} alt="" />
