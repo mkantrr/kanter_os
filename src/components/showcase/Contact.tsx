@@ -6,6 +6,8 @@ import ghIconLight from '../../assets/pictures/contact-gh_light.png';
 import ghIconDark from '../../assets/pictures/contact-gh_dark.png';
 import inIconLight from '../../assets/pictures/contact-in_light.png';
 import inIconDark from '../../assets/pictures/contact-in_dark.png';
+import businessCardIconDark from '../../assets/pictures/business-card_dark.png';
+import businessCardIconLight from '../../assets/pictures/business-card_light.png';
 import ResumeDownload from './ResumeDownload';
 import ThemeContext from '../../hooks/ThemeProvider';
 
@@ -121,6 +123,10 @@ const Contact: React.FC<ContactProps> = (props) => {
                 {theme === "dark" && (
                     <div style={styles.socials}>
                         <SocialBox
+                            icon={businessCardIconDark}
+                            link={'https://dot.cards/matutu'}
+                        />
+                        <SocialBox
                             icon={ghIconDark}
                             link={'https://github.com/mkantrr'}
                         />
@@ -137,6 +143,10 @@ const Contact: React.FC<ContactProps> = (props) => {
                 {theme === "light" && (
                     <div style={styles.socials}>
                         <SocialBox
+                            icon={businessCardIconLight}
+                            link={'https://dot.cards/matutu'}
+                        />
+                        <SocialBox
                             icon={ghIconLight}
                             link={'https://github.com/mkantrr'}
                         />
@@ -148,7 +158,7 @@ const Contact: React.FC<ContactProps> = (props) => {
                             icon={discordIconLight}
                             link={'https://discord.com/users/204980290609872896'}
                         />
-                        </div>
+                    </div>
                 )}
             </div>
             <div className="text-block">
