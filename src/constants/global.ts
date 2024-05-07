@@ -11,28 +11,11 @@ const globalStyle = createGlobalStyle`
   }
 
   input {
-    width: 100%;
-    padding: 4px 8px;
-    box-sizing: border-box;
-    border: none;
-    resize: none;
-    box-shadow: var(--border-field);
-    font-family: Millennium, sans-serif;
-    font-size: 18px;
     color: ${({ theme }: GlobalThemeProps) => theme.input_text};
     background-color: ${({ theme }: GlobalThemeProps) => theme.background};
   }
 
   textarea {
-      width: 100%;
-      height: 150px;
-      padding: 4px 8px;
-      border: none;
-      box-sizing: border-box;
-      resize: none;
-      box-shadow: var(--border-field);
-      font-family: Millennium, sans-serif;
-      font-size: 18px;
       color: ${({ theme }: GlobalThemeProps) => theme.input_text};
       background-color: ${({ theme }: GlobalThemeProps) => theme.background};
   }
@@ -41,7 +24,6 @@ const globalStyle = createGlobalStyle`
   textarea:active,
   input:focus,
   input:active {
-      outline: none;
       color: ${({ theme }: GlobalThemeProps) => theme.input_text};
       background-color: ${({ theme }: GlobalThemeProps) => theme.input_background};
   }
@@ -59,32 +41,12 @@ const globalStyle = createGlobalStyle`
   }
 
   .button-border {
-    box-sizing: border-box;
     background: ${({ theme }: GlobalThemeProps) => theme.surface_hover}; 
-    box-shadow: var(--border-raised-outer), var(--border-raised-inner);
-    border-radius: 0;
-    border: none;
   }
   
   .site-button {
-    box-sizing: border-box;
     background: ${({ theme }: GlobalThemeProps) => theme.surface_hover}; 
-    box-shadow: var(--border-raised-outer), var(--border-raised-inner);
-    border-radius: 0;
-    border: none;
     color: ${({ theme }: GlobalThemeProps) => theme.text};
-    font-size: 18px;
-    /* flex-shrink: 1; */
-    padding: 4px 12px;
-    cursor: pointer;
-    font-family: Millennium;
-    overflow: hidden;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
   }
 
   .site-button:hover {
@@ -101,14 +63,8 @@ const globalStyle = createGlobalStyle`
   }
 
   #credits-app {
-    width: 100%;
     background-color: ${({ theme }: GlobalThemeProps) => theme.background};
-    padding-top: 64;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 64;
     color: ${({ theme }: GlobalThemeProps) => theme.text};
-    overflow: hidden;
   }
 
 `;
