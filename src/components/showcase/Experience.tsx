@@ -424,7 +424,7 @@ const Experience: React.FC<ExperienceProps> = (props) => {
                     from the University of Mary Washington College of Arts and Sciences with a 
                     double major in Computer Science and Communication & Digital Studies, and a minor in 
                     Cybersecurity. I was also inducted into <b>Chi Alpha Sigma</b>, the Student Athlete honors society
-                    and <b>Lambda Phi Eta</b>, the communications honors society. My final GPA was <b>3.74</b>.
+                    and <b>Lambda Phi Eta</b>, the communications honors society. My final GPA was <b>3.77</b>.
                 </p>
                 <br />
                 <p>

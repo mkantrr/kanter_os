@@ -35,7 +35,8 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     portfolio website similar in structure to this one, however much less cool looking. You
                     can take a look at it over at <a rel="noreferrer" target="_blank" href="https://oldportfolio.matutu.dev">
                         oldportfolio.matutu.dev
-                    </a>. The old one has much of the same structure and is created similarly in a React app.
+                    </a>. The old one has much of the same structure and is created similarly in a React app, however the data
+                    there is depracated.
                 </p>
                 <br />
                 <div className="captioned-image">
