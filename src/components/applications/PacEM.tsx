@@ -16,7 +16,7 @@ const PacEmApp: React.FC<PacEmAppProps> = (props) => {
             height={height}
             windowTitle="Pac Em"
             windowBarIcon="windowGameIcon"
-            windowBarColor="#240C00"
+            windowBarColor="#AEAE00"
             bottomLeftText={'Powered by JSDOS & DOSBox'}
             closeWindow={props.onClose}
             onInteract={props.onInteract}

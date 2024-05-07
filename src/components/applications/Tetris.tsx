@@ -16,7 +16,7 @@ const TetrisApp: React.FC<TetrisAppProps> = (props) => {
             height={height}
             windowTitle="Tetris"
             windowBarIcon="windowGameIcon"
-            windowBarColor="#240C00"
+            windowBarColor="#1C1C1C"
             bottomLeftText={'Powered by JSDOS & DOSBox'}
             closeWindow={props.onClose}
             onInteract={props.onInteract}
