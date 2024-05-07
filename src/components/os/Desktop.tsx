@@ -5,7 +5,7 @@ import PacEM from '../applications/PacEM';
 import SimCity from '../applications/SimCity2000';
 import Tetris from '../applications/Tetris';
 import ShutdownSequence from './ShutdownSequence';
-import ThisComputer from '../applications/ThisComputer';
+//import ThisComputer from '../applications/ThisComputer';
 import Toolbar from './Toolbar';
 import DesktopShortcut, { DesktopShortcutProps } from './DesktopShortcut';
 import Scrabble from '../applications/Scrabble';
