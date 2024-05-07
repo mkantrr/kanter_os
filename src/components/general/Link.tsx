@@ -46,7 +46,7 @@ const Link: React.FC<LinkProps> = (props) => {
             onMouseUp={handleClick}
             style={Object.assign({}, { display: 'flex' }, props.containerStyle)}
         >
-            {isHere && <div style={styles.hereIndicator} />}
+            {isHere && <div id="hereIndicator" style={styles.hereIndicator} />}
             <h4
                 className="router-link"
                 style={Object.assign(
@@ -71,7 +71,6 @@ const styles: StyleSheetCSS = {
         height: 4,
         borderWidth: 3,
         borderStyle: 'solid',
-        borderColor: '#7a3c7a',
         alignSelf: 'center',
         borderRadius: '50%',
         marginRight: 6,

@@ -53,9 +53,28 @@ const globalStyle = createGlobalStyle`
     background-color: ${({ theme }: GlobalThemeProps) => theme.surface_hover};
   }
 
+  .router-link:link {
+    color: ${({ theme }: GlobalThemeProps) => theme.a_link};
+  }
+
+  .router-link:visited {
+    color: ${({ theme }: GlobalThemeProps) => theme.a_visited};
+  }
+
+  a:link {
+    color: ${({ theme }: GlobalThemeProps) => theme.a_link};
+  }
+  a:visited {
+    color: ${({ theme }: GlobalThemeProps) => theme.a_visited};
+  }
+
   #showcase {
     background-color: ${({ theme }: GlobalThemeProps) => theme.background}; 
     color: ${({ theme }: GlobalThemeProps) => theme.text};
+  }
+
+  #hereIndicator {
+    border-color: ${({ theme }: GlobalThemeProps) => theme.a_visited};
   }
 
   #resumeContainer {

@@ -85,7 +85,7 @@ const CommunicationProjects: React.FC<CommunicationProjectsProps> = (props) => {
                             href="https://scholar.umw.edu/cgi/viewcontent.cgi?type=pdf&article=1613&unstamped=yes&date=1714764455&preview_mode=1&context=student_research&/1714764455-text.pdf"
                         >
                             <p>
-                                <b>[RESEARCH PAPER]</b> - Simulating Information and Communication Applications in Employee Interaction Network Models
+                                <b>[Research Study]</b> - Simulating Information and Communication Applications in Employee Interaction Network Models
                             </p>
                         </a>
                     </li>
@@ -96,7 +96,7 @@ const CommunicationProjects: React.FC<CommunicationProjectsProps> = (props) => {
                             href="https://github.com/mkantrr/ict_modeling"
                         >
                             <p>
-                                <b>[GITHUB REPO]</b> - Defined Models and Simulation Code
+                                <b>[GitHub]</b> - Defined Models and Simulation Code
                             </p>
                         </a>
                     </li>
@@ -143,7 +143,7 @@ const CommunicationProjects: React.FC<CommunicationProjectsProps> = (props) => {
                             href="https://github.com/mkantrr/personal-turing-test-chatbot"
                         >
                             <p>
-                                <b>[GITHUB]</b> - Trainable Chatbot
+                                <b>[GitHub]</b> - Trainable Chatbot
                             </p>
                         </a>
                     </li>
