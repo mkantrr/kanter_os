@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import software from '../../assets/pictures/projects/software.gif';
+import software_dark from '../../assets/pictures/projects/software_dark.gif';
+import software_light from '../../assets/pictures/projects/software_light.gif';
 import communication from '../../assets/pictures/projects/communication.gif';
 import volleyball from '../../assets/pictures/projects/volleyball.gif';
+import ThemeContext from '../../hooks/ThemeProvider';
 
 export interface ProjectsProps {}
 
@@ -65,6 +67,8 @@ const ProjectBox: React.FC<ProjectBoxProps> = ({
 };
 
 const Projects: React.FC<ProjectsProps> = (props) => {
+    const { theme } = useContext(ThemeContext);
+
     return (
         <div className="site-page-content">
             <h1>Projects</h1>
@@ -77,13 +81,25 @@ const Projects: React.FC<ProjectsProps> = (props) => {
             </p>
             <br />
             <div style={styles.projectLinksContainer}>
+                {theme === "light" && (
                 <ProjectBox
-                    icon={software}
+                    icon={software_dark}
                     iconStyle={styles.computerIcon}
                     title="Software"
                     subtitle="PROJECTS"
                     route="software"
                 />
+                )}
+                {theme === "dark" && (
+                <ProjectBox
+                    icon={software_light}
+                    iconStyle={styles.computerIcon}
+                    title="Software"
+                    subtitle="PROJECTS"
+                    route="software"
+                />
+                )}
+
                 <ProjectBox
                     icon={communication}
                     iconStyle={styles.commIcon}

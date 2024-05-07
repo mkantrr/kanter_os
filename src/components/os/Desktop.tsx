@@ -1,5 +1,4 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import Colors from '../../constants/colors';
 import ShowcaseExplorer from '../applications/ShowcaseExplorer';
 import Doom from '../applications/Doom';
 import PacEM from '../applications/PacEM';
@@ -14,7 +13,9 @@ import { IconName } from '../../assets/icons';
 import backgroundImage from '../../assets/pictures/background-image.png';
 import Credits from '../applications/Credits';
 
-export interface DesktopProps {}
+export interface DesktopProps {
+    toggleTheme: () => void;
+}
 
 type ExtendedWindowAppProps<T> = T & WindowAppProps;
 
@@ -68,12 +69,12 @@ const APPLICATIONS: {
         shortcutIcon: 'credits',
         component: Credits,
     },
-    computer: {
+    /*computer: {
         key: 'computer',
         name: 'This Computer',
         shortcutIcon: 'computerBig',
         component: ThisComputer,
-    },
+    },*/
 };
 
 const Desktop: React.FC<DesktopProps> = (props) => {
@@ -254,6 +255,7 @@ const Desktop: React.FC<DesktopProps> = (props) => {
                 windows={windows}
                 toggleMinimize={toggleMinimize}
                 shutdown={startShutdown}
+                toggleTheme={props.toggleTheme}
             />
         </div>
     ) : (
@@ -268,7 +270,6 @@ const styles: StyleSheetCSS = {
     desktop: {
         minHeight: '100%',
         flex: 1,
-        backgroundColor: Colors.turquoise,
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'contain',
     },

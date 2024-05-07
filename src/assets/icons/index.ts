@@ -5,6 +5,8 @@ import maximize from './maximize.png';
 import minimize from './minimize.png';
 import computerBig from './computerBig.png';
 import computerSmall from './computerSmall.png';
+import sunIcon from './sunIcon.png';
+import moonIcon from './moonIcon.png';
 import myComputer from './myComputer.png';
 import showcaseIcon from './showcaseIcon.png';
 import doomIcon from './doomIcon.png';
@@ -26,6 +28,8 @@ const icons = {
     minimize: minimize,
     computerBig: computerBig,
     computerSmall: computerSmall,
+    sunIcon: sunIcon,
+    moonIcon: moonIcon,
     myComputer: myComputer,
     showcaseIcon: showcaseIcon,
     doomIcon: doomIcon,

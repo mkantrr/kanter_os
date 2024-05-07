@@ -31,7 +31,7 @@ const ShowcaseExplorer: React.FC<ShowcaseExplorerProps> = (props) => {
             bottomLeftText={'© Copyright 2024 Matthew Kanter'}
         >
             <Router>
-                <div className="site-page">
+                <div id="showcase" className="site-page">
                     <VerticalNavbar />
                     <Routes>
                         <Route path="/" element={<Home />} />

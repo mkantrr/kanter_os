@@ -83,10 +83,10 @@ const Credits: React.FC<CreditsProps> = (props) => {
             <div
                 onMouseDown={nextSlide}
                 className="site-page"
-                style={styles.credits}
+                id="credits-app"
             >
                 <h2>Credits</h2>
-                <p>mattkanter.com, 2024</p>
+                <p>mattkanter.com</p>
                 <br />
                 <br />
                 <br />
@@ -130,16 +130,6 @@ const Credits: React.FC<CreditsProps> = (props) => {
 };
 
 const styles: StyleSheetCSS = {
-    credits: {
-        width: '100%',
-        backgroundColor: 'black',
-        paddingTop: 64,
-        flexDirection: 'column',
-        alignItems: 'center',
-        paddingBottom: 64,
-        color: 'white',
-        overflow: 'hidden',
-    },
     row: {
         overflow: 'none',
         justifyContent: 'space-between',

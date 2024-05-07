@@ -27,31 +27,23 @@ const Link: React.FC<LinkProps> = (props) => {
         return () => {};
     }, [location, props.to]);
 
-    const [active, setActive] = useState(false);
-
     const handleClick = (e: any) => {
         let isMounted = true;
         e.preventDefault();
-        setActive(true);
         if (location.pathname !== `/${props.to}`) {
             setTimeout(() => {
                 if (isMounted) navigate(`/${props.to}`);
             }, 100);
         }
-        let t = setTimeout(() => {
-            if (isMounted) setActive(false);
-        }, 100);
-
         return () => {
             isMounted = false;
-            clearTimeout(t);
         };
     };
 
     return (
         <RouterLink
             to={`/${props.to}`}
-            onMouseDown={handleClick}
+            onMouseUp={handleClick}
             style={Object.assign({}, { display: 'flex' }, props.containerStyle)}
         >
             {isHere && <div style={styles.hereIndicator} />}
@@ -60,7 +52,6 @@ const Link: React.FC<LinkProps> = (props) => {
                 style={Object.assign(
                     {},
                     styles.link,
-                    active && { color: 'red' }
                 )}
             >
                 {props.text}
@@ -80,7 +71,7 @@ const styles: StyleSheetCSS = {
         height: 4,
         borderWidth: 3,
         borderStyle: 'solid',
-        borderColor: 'rgb(85, 26, 139)',
+        borderColor: '#7a3c7a',
         alignSelf: 'center',
         borderRadius: '50%',
         marginRight: 6,

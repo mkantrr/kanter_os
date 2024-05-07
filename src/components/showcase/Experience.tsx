@@ -379,7 +379,7 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
-                        <h2>Georgia Instituate of Technology</h2>
+                        <h2>Georgia Institute of Technology</h2>
                     </div>
                     <div style={styles.headerRow}>
                         <h3>Master of Science</h3>
