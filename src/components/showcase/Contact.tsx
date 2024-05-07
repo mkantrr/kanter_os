@@ -1,9 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import colors from '../../constants/colors';
-import discordIcon from '../../assets/pictures/contact-discord.png';
-import ghIcon from '../../assets/pictures/contact-gh.png';
-import inIcon from '../../assets/pictures/contact-in.png';
+import discordIconLight from '../../assets/pictures/contact-discord_light.png';
+import discordIconDark from '../../assets/pictures/contact-discord_dark.png';
+import ghIconLight from '../../assets/pictures/contact-gh_light.png';
+import ghIconDark from '../../assets/pictures/contact-gh_dark.png';
+import inIconLight from '../../assets/pictures/contact-in_light.png';
+import inIconDark from '../../assets/pictures/contact-in_dark.png';
 import ResumeDownload from './ResumeDownload';
+import ThemeContext from '../../hooks/ThemeProvider';
 
 export interface ContactProps {}
 
@@ -39,6 +43,7 @@ const Contact: React.FC<ContactProps> = (props) => {
     const [isLoading, setIsLoading] = useState(false);
     const [formMessage, setFormMessage] = useState('');
     const [formMessageColor, setFormMessageColor] = useState('');
+    const { theme } = useContext(ThemeContext);
 
     useEffect(() => {
         if (validateEmail(email) && name.length > 0 && message.length > 0) {
@@ -113,20 +118,38 @@ const Contact: React.FC<ContactProps> = (props) => {
         <div className="site-page-content">
             <div style={styles.header}>
                 <h1>Contact</h1>
-                <div style={styles.socials}>
-                    <SocialBox
-                        icon={ghIcon}
-                        link={'https://github.com/mkantrr'}
-                    />
-                    <SocialBox
-                        icon={inIcon}
-                        link={'https://www.linkedin.com/in/mkanter124/'}
-                    />
-                    <SocialBox
-                        icon={discordIcon}
-                        link={'https://discord.com/users/204980290609872896'}
-                    />
-                </div>
+                {theme === "dark" && (
+                    <div style={styles.socials}>
+                        <SocialBox
+                            icon={ghIconDark}
+                            link={'https://github.com/mkantrr'}
+                        />
+                        <SocialBox
+                            icon={inIconDark}
+                            link={'https://www.linkedin.com/in/mkanter124/'}
+                        />
+                        <SocialBox
+                            icon={discordIconDark}
+                            link={'https://discord.com/users/204980290609872896'}
+                        />
+                    </div>
+                )}
+                {theme === "light" && (
+                    <div style={styles.socials}>
+                        <SocialBox
+                            icon={ghIconLight}
+                            link={'https://github.com/mkantrr'}
+                        />
+                        <SocialBox
+                            icon={inIconLight}
+                            link={'https://www.linkedin.com/in/mkanter124/'}
+                        />
+                        <SocialBox
+                            icon={discordIconLight}
+                            link={'https://discord.com/users/204980290609872896'}
+                        />
+                        </div>
+                )}
             </div>
             <div className="text-block">
                 <p>

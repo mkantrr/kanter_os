@@ -1,9 +1,11 @@
 import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import software_dark from '../../assets/pictures/projects/software_dark.gif';
-import software_light from '../../assets/pictures/projects/software_light.gif';
-import communication from '../../assets/pictures/projects/communication.gif';
-import volleyball from '../../assets/pictures/projects/volleyball.gif';
+import softwareDark from '../../assets/pictures/projects/software_dark.gif';
+import softwareLight from '../../assets/pictures/projects/software_light.gif';
+import communicationLight from '../../assets/pictures/projects/communication_light.gif';
+import communicationDark from '../../assets/pictures/projects/communication_dark.gif';
+import volleyballLight from '../../assets/pictures/projects/volleyball_light.gif';
+import volleyballDark from '../../assets/pictures/projects/volleyball_dark.gif';
 import ThemeContext from '../../hooks/ThemeProvider';
 
 export interface ProjectsProps {}
@@ -80,41 +82,56 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                 get in touch if you want to learn more. Enjoy!
             </p>
             <br />
-            <div style={styles.projectLinksContainer}>
-                {theme === "light" && (
-                <ProjectBox
-                    icon={software_dark}
-                    iconStyle={styles.computerIcon}
-                    title="Software"
-                    subtitle="PROJECTS"
-                    route="software"
-                />
-                )}
-                {theme === "dark" && (
-                <ProjectBox
-                    icon={software_light}
-                    iconStyle={styles.computerIcon}
-                    title="Software"
-                    subtitle="PROJECTS"
-                    route="software"
-                />
-                )}
-
-                <ProjectBox
-                    icon={communication}
-                    iconStyle={styles.commIcon}
-                    title="Communication"
-                    subtitle="VENTURES"
-                    route="communication"
-                />
-                <ProjectBox
-                    icon={volleyball}
-                    iconStyle={styles.volleyballIcon}
-                    title="Sporting"
-                    subtitle="ENDEAVORS"
-                    route="sporting"
-                />
-            </div>
+            {theme === "light" && (
+                <div style={styles.projectLinksContainer}>
+                    <ProjectBox
+                        icon={softwareDark}
+                        iconStyle={styles.computerIcon}
+                        title="Software"
+                        subtitle="PROJECTS"
+                        route="software"
+                    />
+                    <ProjectBox
+                        icon={communicationDark}
+                        iconStyle={styles.commIcon}
+                        title="Communication"
+                        subtitle="VENTURES"
+                        route="communication"
+                    />
+                    <ProjectBox
+                        icon={volleyballDark}
+                        iconStyle={styles.volleyballIcon}
+                        title="Sporting"
+                        subtitle="ENDEAVORS"
+                        route="sporting"
+                    />
+                </div>
+            )}
+            {theme === "dark" && (
+                <div style={styles.projectLinksContainer}>
+                    <ProjectBox
+                        icon={softwareLight}
+                        iconStyle={styles.computerIcon}
+                        title="Software"
+                        subtitle="PROJECTS"
+                        route="software"
+                    />
+                    <ProjectBox
+                        icon={communicationLight}
+                        iconStyle={styles.commIcon}
+                        title="Communication"
+                        subtitle="VENTURES"
+                        route="communication"
+                    />
+                    <ProjectBox
+                        icon={volleyballLight}
+                        iconStyle={styles.volleyballIcon}
+                        title="Sporting"
+                        subtitle="ENDEAVORS"
+                        route="sporting"
+                    />
+                </div>
+            )} 
         </div>
     );
 };
