@@ -120,7 +120,7 @@ const Toolbar: React.FC<ToolbarProps> = ({
                                     icon="moonIcon"
                                 />
                                 <p style={styles.startMenuText}>
-                                    Toggle dark <u>m</u>ode
+                                    Dark <u>m</u>ode
                                 </p>
                             </div>
                             )}
@@ -138,7 +138,7 @@ const Toolbar: React.FC<ToolbarProps> = ({
                                    icon="sunIcon"
                                />
                                <p style={styles.startMenuText}>
-                                   Toggle light <u>m</u>ode
+                                   Light <u>m</u>ode
                                </p>
                            </div> 
                             )}
