@@ -269,6 +269,21 @@ textarea:focus,
     overflow-y: scroll;
 }
 
+.router-link:link {
+    color: var(--dark-a-link);
+  }
+
+  .router-link:visited {
+    color: var(--dark-a-visited);
+  }
+
+  a:link {
+    color: var(--dark-a-link);
+  }
+  a:visited {
+    color: var(--dark-a-visited);
+  }
+
 .loading::after {
     display: inline-block;
     animation: dotty steps(1, end) 1s infinite;
