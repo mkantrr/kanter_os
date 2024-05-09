@@ -82,7 +82,7 @@ const CommunicationProjects: React.FC<CommunicationProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://scholar.umw.edu/cgi/viewcontent.cgi?type=pdf&article=1613&unstamped=yes&date=1714764455&preview_mode=1&context=student_research&/1714764455-text.pdf"
+                            href="https://scholar.umw.edu/cgi/viewcontent.cgi?article=1613&context=student_research"
                         >
                             <p>
                                 <b>[Research Study]</b> - Simulating Information and Communication Applications in Employee Interaction Network Models
