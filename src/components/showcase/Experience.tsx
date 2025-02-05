@@ -38,11 +38,31 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             </div>
             <div className="text-block">
                 <p>
-                    I am slated to begin working as a sofware engineer at the 
-                    Naval Surface Warfare Center Dahlgren Divison in May, where I will apply my 
-                    past experiences and skills to a full-time public sector position.
+                I began working for the Naval Surface Warfare Center Dahlgren Division in May 2024.
+                I have accomplished many technical and career goals in this role, but most notably I have:
                 </p>
                 <br />
+                <ul>
+                    <li>
+                        <p>
+                        Developed fixes, improvements, and new features to tactical communications software for 
+                        various missile weapon systems for the U.S. Marine Corps and the broader Navy, 
+                        decreasing the capacity for operational error for deployed armed service weapon system operators.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                        Participated in an agile, ticket-based development cycle 
+                        using <b>C++</b>, <b>Shell Scripting</b>, <b>Makefile</b>, and <b>Ada</b> programming languages.
+                        </p>
+                    </li>
+                </ul>
+                <p>
+                My experience at NSWCDD provided me valuable and practical experience with development methodologies such as Agile, 
+                solid foundations in OOP principles, adaptability for using tools such 
+                as <b>Jenkins</b>, <b>SonarQube</b>, and others for CI/CD pipelining, 
+                and overall was a fantastic experience to prop my new career on.
+                </p>
             </div>
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
