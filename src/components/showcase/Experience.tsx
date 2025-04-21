@@ -19,6 +19,32 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
+                        <h2>KeyCaliber</h2>
+                        <a
+                            rel="noreferrer"
+                            target="_blank"
+                            href={'https://keycaliber.com'}
+                        >
+                            <h4>www.keycaliber.com</h4>
+                        </a>
+                    </div>
+                    <div style={styles.headerRow}>
+                        <h3>Software Engineer</h3>
+                        <b>
+                            <p>May 2025 - present</p>
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div className="text-block">
+                <p>
+                I began working for KeyCaliber in May of 2025 out of passion for accelerating my career growth
+                and reducing the uncertainty revolving around federal employment at the time.
+                </p>
+            </div>
+            <div style={styles.headerContainer}>
+                <div style={styles.header}>
+                    <div style={styles.headerRow}>
                         <h2>Naval Surface Warfare Center (NSWCDD)</h2>
                         <a
                             rel="noreferrer"
@@ -31,7 +57,7 @@ const Experience: React.FC<ExperienceProps> = (props) => {
                     <div style={styles.headerRow}>
                         <h3>Software Engineer</h3>
                         <b>
-                            <p>May 2024 - Present</p>
+                            <p>May 2024 - May 2025</p>
                         </b>
                     </div>
                 </div>

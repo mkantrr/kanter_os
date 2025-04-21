@@ -31,12 +31,8 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     </a>, but the adaptations I made to it challenged
                     me both technically and creatively. In the endeavor to take Henry's
                     code and make it my own, I learned how to emulate JSDOS games, how to use <b>Blender</b> (and more on 3D renderings),
-                    more about <b>React</b> and <b>TypeScript</b>, <b>Three.js</b>, and more. I created a predecessor
-                    portfolio website similar in structure to this one, however much less cool looking. You
-                    can take a look at it over at <a rel="noreferrer" target="_blank" href="https://oldportfolio.matutu.dev">
-                        oldportfolio.matutu.dev
-                    </a>. The old one has much of the same structure and is created similarly in a React app, however the data
-                    there is deprecated.
+                    more about <b>React</b> and <b>TypeScript</b>, <b>Three.js</b>, and more. The 3D side of this site is still a WIP, as 
+                    learning Blender is a new skill I need to get around to doing.
                 </p>
                 <br />
                 <div className="captioned-image">
@@ -137,7 +133,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     It is able to be generated with the interpreter that converts .theory files to tokens, 
                     lexes them, parses them, and interprets them in accordance with compiler theory. 
                     The {' '}
-                    <a rel="noreferrer" target="_blank" href="https://automython.matutu.dev/">
+                    <a rel="noreferrer" target="_blank" href="https://github.com/mkantrr/automython">
                         <b>Automython</b>
                     </a> language acts very similar to Python, only with more limitations on 
                     types and usage of built-in functions only.
@@ -214,17 +210,6 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                                 >
                                     <p>
                                         <b>[PyPI]</b> - Automython Project Link
-                                    </p>
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    rel="noreferrer"
-                                    target="_blank"
-                                    href="https://automython.matutu.dev"
-                                >
-                                    <p>
-                                        <b>[Docs Site]</b> - Automython Documentation
                                     </p>
                                 </a>
                             </li>

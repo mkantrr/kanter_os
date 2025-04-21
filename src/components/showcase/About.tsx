@@ -18,7 +18,7 @@ const About: React.FC<AboutProps> = (props) => {
             <br />
             <div className="text-block">
                 <p>
-                    I'm a software engineer currently working at the Naval Surface Warfare Center Dahlgren Division (NSWCDD)! 
+                    I'm a software engineer currently working at KeyCaliber, a cybersecurity risk assessment and management solution! 
                     In May of 2024 I graduated from the University of Mary Washington (UMW)
                     with my B.S. in Computer Science. 
                     I am currently a student at Georgia Tech to earn my M.S. in Computer Science, starting in August of 2024.
