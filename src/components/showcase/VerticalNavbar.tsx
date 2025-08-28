@@ -78,9 +78,9 @@ const VerticalNavbar: React.FC<VerticalNavbarProps> = (props) => {
                 />
             </div>
             <div style={styles.spacer} />
-            {/*<div style={styles.forHireContainer} onMouseDown={() => navigate('/contact')}>
+            {<div style={styles.forHireContainer} onMouseDown={() => navigate('/contact')}>
                 <img src={forHire} style={styles.image} alt="" />
-            </div>*/}
+            </div>}
         </div>
     ) : (
         <></>

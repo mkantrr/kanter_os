@@ -33,9 +33,9 @@ const Home: React.FC<HomeProps> = (props) => {
                     text="CONTACT"
                 />
             </div>
-            {/*<div style={styles.forHireContainer} onMouseDown={() => navigate('/contact')}>
+            {<div style={styles.forHireContainer} onMouseDown={() => navigate('/contact')}>
                 <img src={forhire} alt="" />
-            </div>*/}
+            </div>}
         </div>
     );
 };
